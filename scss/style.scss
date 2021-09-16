@@ -1,0 +1,100 @@
+@import "variables";
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $fondbody;
+    color: white;
+
+
+    .navbar {
+        background-color: $fondnav;
+        padding: 0;
+        border-bottom: solid 2px $violet;
+
+        .nav-main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 10px;
+            
+
+            a {
+                width: 40%;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .adhesion {
+                width: 100%;
+                padding: 0;
+                display: flex;
+                margin: 0;
+                text-align: center;
+                font-size: .8rem;
+                align-items: center;
+            }
+            .burger {
+                display: flex;
+                flex-direction: column;
+                gap: 3px;
+                justify-content: center;
+                cursor: pointer;
+
+                .barreburger {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    .lien {
+        display: none;
+        // display: flex;
+        flex-direction: column;
+        background-color: $fontnavlink;
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 2px $violet;
+
+
+
+        .emission {
+            margin: auto;
+            margin-top: 5px;
+            padding: 5px;
+            background-color: $violet;
+            font-size: 1.5rem;
+        }
+        .nav-links{
+            padding: 0;
+            .nav-link{
+                margin: 5px;
+                color: white;
+            }
+        }
+        .nav-links2{
+            padding: 0;
+            margin-left: 5px;
+            margin-right: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
