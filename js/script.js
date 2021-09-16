@@ -1,16 +1,16 @@
 let burger = document.querySelector(".burger");
 let menu = document.querySelector(".lien");
-let nav = document.querySelector(".nav-main")
-let close = document.createElement("p")
+let nav = document.querySelector(".nav-main");
+let closebtn = document.querySelector(".closebtn");
+
 burger.addEventListener("click", () => {
     menu.style.display = "flex";
     burger.style.display = "none";
-    close.textContent = "Fermer"
-    nav.appendChild(close)
-})
+    closebtn.style.display = "block";
+});
 
-close.addEventListener("click", () => {
+closebtn.addEventListener("click", () => {
     menu.style.display = "none";
-    close.style.display = "none";
+    closebtn.style.display = "none";
     burger.style.display = "flex";
-})
+});

@@ -64,7 +64,7 @@ body .navbar .nav-main .burger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 3px;
+  gap: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -76,6 +76,22 @@ body .navbar .nav-main .burger .barreburger {
   width: 30px;
   height: 3px;
   background-color: white;
+}
+
+body .navbar .nav-main .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body .navbar .nav-main .close .closebtn {
+  display: none;
+  width: 30px;
+  height: 30px;
 }
 
 body .lien {
