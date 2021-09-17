@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La télé de l'Yonne</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightmode.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js" defer></script>
     <script src="bootstrap/js/bootstrap.bundle.js" defer></script>
     <script src="js/burger.js" defer></script>
@@ -16,6 +16,10 @@
 <body>
     <nav class="navbar">
         <section class="nav-main">
+            <div class="lightmode">
+                <p>Mode clair</p>
+                <span class="iconify" data-icon="ic:baseline-light-mode" style="color: rgb(255, 255, 255);"></span>
+            </div>
             <a href="index.html"><img src="img/logo-blanc.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
             <a href="" class="adhesion">Vous souhaitez adhérer à l'association ?</a>
             <div class="burger">
@@ -28,55 +32,68 @@
             </div>
         </section>
         <div class="lien">
-            <h1 class="emission">Nos émissions</h1>
+            <h1 class="emissions">Nos émissions</h1>
             <ul class="nav-links">
-                <li class="nav-link">A découvert</li>
-                <li class="nav-link">C'était comment avant ?</li>
-                <li class="nav-link">Image de pros</li>
-                <li class="nav-link">Le JT</li>
-                <li class="nav-link">Restons couverts</li>
-                <li class="nav-link">Top culture</li>
-                <li class="nav-link">Voix de garage</li>
+                <li class="nav-link"><a href="">A découvert</a></li>
+                <li class="nav-link"><a href="">C'était comment avant ?</a></li>
+                <li class="nav-link"><a href="">Image de pros</a></li>
+                <li class="nav-link"><a href="">Le JT</a></li>
+                <li class="nav-link"><a href="">Restons couverts</a></li>
+                <li class="nav-link"><a href="">Top culture</a></li>
+                <li class="nav-link"><a href="">Voix de garage</a></li>
             </ul>
             <ul class="nav-links2">
-                <li class="nav-link2">Qui sommes nous ?</li>
-                <li class="nav-link2">Notre équipe</li>
+                <li class="nav-link2"><a href="">Qui sommes nous ?</a></li>
+                <li class="nav-link2"><a href="">Notre équipe</a></li>
             </ul>
         </div>
     </nav>
     <main class="articles-container">
-        <section class="presentation"></section>
         <h1 class="titre-accueil">Venez découvrir nos différentes émissions sur les communes de l'Yonne !</h1>
         <img class="imgplateau" src="img/plateau.jpg" alt="Plateau de tournage">
-        <article class="emissions">
+        <h2 class="last-emissions">Nos dernières émissions</h2>
+        <article class="emission">
             <h2>Le JT</h2>
-            <img src="img/Rentré avalon.png" alt="Rentré avalon">
-            <h3>La rentrée des classes du lycée d'avalon</h3>
+            <a href="">
+                <img src="img/Rentré avalon.png" alt="Rentré avalon">
+                <h3>La rentrée des classes du lycée d'avalon</h3>
+            </a>
         </article>
-        <article class="emissions">
+        <article class="emission">
             <h2>C'était comment avant ?</h2>
-            <img src="img/c'etait comment avant.jpg" alt="c'etait comment avant ?">
-            <h3>"L'Yonne notre mémoire" "Comment c'était avant ? Raconte-nous !"</h3>
+            <a href="">
+                <img src="img/c'etait comment avant.jpg" alt="c'etait comment avant ?">
+                <h3>"L'Yonne notre mémoire" "Comment c'était avant ? Raconte-nous !"</h3>
+            </a>
         </article>
-        <article class="emissions">
+        <article class="emission">
             <h2>L'info !</h2>
-            <img src="img/Capture-décran-2021-08-06-à-13.46.39-1536x553.png"
-                alt="Installation module pour la cantine de Theil sur Vanne">
-            <h3>Installation des modules pour la cantine de Theil sur Vanne</h3>
+            <a href="">
+                <img src="img/Capture-décran-2021-08-06-à-13.46.39-1536x553.png"
+                    alt="Installation module pour la cantine de Theil sur Vanne">
+                <h3>Installation des modules pour la cantine de Theil sur Vanne</h3>
+            </a>
         </article>
-        <article class="emissions">
+        <article class="emission">
             <h2>Les communes</h2>
-            <img src="img/Capture-décran-2021-07-18-à-22.08.11-1536x833.png" alt="Inauguration restaurant">
-            <h3>Inauguration du restaurant "Le Pérou" à Saint-Julien-du-Sault</h3>
+            <a href="">
+                <img src="img/Capture-décran-2021-07-18-à-22.08.11-1536x833.png" alt="Inauguration restaurant">
+                <h3>Inauguration du restaurant "Le Pérou" à Saint-Julien-du-Sault</h3>
+            </a>
         </article>
-        <article class="emissions">
+        <article class="emission">
             <h2>L'info !</h2>
-            <img src="img/Capture-décran-2021-07-13-à-17.27.30-1536x858.png" alt="Atelier de sculture">
-            <h3>Atelier de sculture avec Yann RAUFASTE</h3>
+            <a href="">
+                <img src="img/Capture-décran-2021-07-13-à-17.27.30-1536x858.png" alt="Atelier de sculture">
+                <h3>Atelier de sculture avec Yann RAUFASTE</h3>
+            </a>
         </article>
+
         <div class="more">
-            <h3>Toutes les émissions</h3>
-            <span class="iconify" data-icon="akar-icons:circle-plus" style="color: black;"></span>
+            <a href="">
+                <h3>Toutes nos émissions</h3>
+                <span class="iconify" data-icon="akar-icons:circle-plus" style="color: rgb(255, 255, 255);"></span>
+            </a>
         </div>
         <section class="map-container">
             <h2>Nous y sommes aller !</h2>
@@ -84,41 +101,47 @@
         </section>
         <section class="partenaires-container">
             <h2>Nos partenaires</h2>
-            <p>Grâce à vous, l’organisation de notre association se développe merveilleusement bien. Votre aide est pour
-                beaucoup dans cette réussite et je tiens aujourd’hui
-                à vous témoigner toute la reconnaissance de notre association.</p>
             <img src="img/partenaires.PNG" alt="logo de nos partenaires">
         </section>
     </main>
     <footer>
-        <section class="footer-logo.address">
+        <section class="footer-logo-address">
             <a href="index.html"><img src="img/logo-blanc.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
             <address class="coordonnees">
+                <h3>Contacts :</h3>
                 <div class="coordonnee">
-                    <span class="iconify" data-icon="akar-icons:location" style="color: black;"></span>
+                    <span id="loc" class="iconify" data-icon="akar-icons:location"
+                        style="color: rgb(255, 255, 255);"></span>
                     <p>Bâtiment Adrien Durant <br>Rue de le Pérouse <br>89300 Joigny</p>
                 </div>
                 <div class="coordonnee">
-                    <span class="iconify" data-icon="el:phone-alt" style="color: black;"></span>
+                    <span class="iconify" data-icon="el:phone-alt" style="color: rgb(255, 255, 255);"></span>
                     <p>06 07 13 07 29</p>
                 </div>
                 <div class="coordonnee">
-                    <span class="iconify" data-icon="cib:mail-ru" style="color: black;"></span>
+                    <span class="iconify" data-icon="cib:mail-ru" style="color: rgb(255, 255, 255);"></span>
                     <p>redac@lateledelyonne.fr</p>
                 </div>
             </address>
         </section>
         <div class="newsletter">
             <p>Inscrivez-vous à la newsletter !</p>
-            <input type="email" name="email" id="email" placeholder="Adresse e-mail*">
-            <button>Je m'abonne</button>
+            <form action="suscribe" method="POST">
+                <input type="email" name="email" id="email" placeholder="Adresse e-mail*">
+                <button>Je m'abonne</button>
+            </form>
         </div>
         <address class="reseaux">
-            <span class="iconify" data-icon="ant-design:twitter-circle-filled" style="color: black;"></span>
-            <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: black;"></span>
-            <span class="iconify" data-icon="akar-icons:linkedin-fill" style="color: black;"></span>
-            <span class="iconify" data-icon="akar-icons:instagram-fill" style="color: black;"></span>
-            <span class="iconify" data-icon="akar-icons:youtube-fill" style="color: black;"></span>
+            <a href=""><span class="iconify" data-icon="ant-design:twitter-circle-filled"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:facebook-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:linkedin-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:instagram-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:youtube-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
         </address>
         <div class="footer-links">
             <a href="mentions-legal.html">Mentions légales</a>
