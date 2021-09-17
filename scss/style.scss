@@ -33,6 +33,11 @@ body {
             margin-right: 10px;
             padding: 10px;
 
+            @media screen and (min-width :1600px) {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
             .lightmode {
                 display: flex;
                 flex-direction: row;
@@ -50,6 +55,10 @@ body {
                 p {
                     font-size: .8rem;
                     margin: 0;
+
+                    @media screen and (min-width :1600px) {
+                        font-size: 1rem;
+                    }
                 }
             }
 
@@ -95,6 +104,10 @@ body {
                 font-size: .8rem;
                 align-items: center;
                 justify-content: center;
+
+                @media screen and (min-width :1600px) {
+                    font-size: 1rem;
+                }
             }
 
             .burger {
@@ -147,7 +160,6 @@ body {
         }
 
 
-
         .emissions {
             margin: auto;
             margin-top: 5px;
@@ -180,6 +192,10 @@ body {
 
                 a:hover {
                     color: $violet;
+                }
+
+                @media screen and (min-width :1600px) {
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -216,6 +232,10 @@ body {
                 gap: 30px;
                 margin: 0;
             }
+
+            @media screen and (min-width :1600px) {
+                font-size: 1.3rem;
+            }
         }
     }
 
@@ -228,6 +248,10 @@ body {
             margin: 15px;
             text-align: center;
             font-size: 1rem;
+
+            @media screen and (min-width :1600px) {
+                font-size: 1.5rem;
+            }
         }
 
         .imgplateau {
@@ -310,7 +334,7 @@ body {
                 width: 100%;
 
                 @media screen and (min-width : 768px) {
-                    width: 50%;
+                    width: 30%;
                 }
             }
 
@@ -324,25 +348,32 @@ body {
         }
 
         .partenaires-container {
+
             display: flex;
             flex-direction: column;
-            background-color: white;
-            align-items: center;
 
-            img {
+            h2{
+                color: white;
                 width: 100%;
-
-                @media screen and (min-width : 1360px) {
-                    width: 50%;
-                }
-            }
-
-            h2 {
-                width: 100%;
-                margin: 0;
+                background-color: $violet;
+                margin:0;
                 padding: 5px;
                 text-align: center;
-                background-color: $violet;
+            }
+            .partenaires-img {
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                background-color: white;
+                align-items: center;
+
+                img {
+                    width: 100%;
+
+                    @media screen and (min-width : 1360px) {
+                        width: 60%;
+                    }
+                }
             }
         }
     }
@@ -462,10 +493,12 @@ body {
             flex-direction: row;
             justify-content: space-between;
             margin: 5px;
+            font-size: .8rem;
 
             @media screen and (min-width : 768px) {
                 justify-content: space-around;
                 margin: 20px;
+                font-size: 1rem;
             }
         }
     }
