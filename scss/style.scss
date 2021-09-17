@@ -2,6 +2,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 a {
@@ -165,6 +166,7 @@ body {
             flex-direction: column;
             gap: 10px;
 
+
             @media screen and (min-width : 1360px) {
                 display: flex;
                 flex-direction: row;
@@ -175,6 +177,19 @@ body {
             .nav-link {
                 margin: 5px;
                 color: white;
+
+                a:hover {
+                    color: $violet;
+                }
+            }
+        }
+
+        @media screen and (min-width:1360px) {
+            .cut {
+                margin-top: .8%;
+                width: 30px;
+                height: 5px;
+                background-color: $violet;
             }
         }
 
@@ -185,6 +200,10 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            a:hover {
+                color: $violet;
+            }
 
             @media screen and (min-width : 768px) {
                 justify-content: space-around;
@@ -230,6 +249,11 @@ body {
             @media screen and (min-width : 768px) {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (min-width : 1360px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
             }
 
             .emission {
@@ -280,8 +304,18 @@ body {
             display: flex;
             flex-direction: column;
             margin-top: 10px;
+            align-items: center;
+
+            img {
+                width: 100%;
+
+                @media screen and (min-width : 768px) {
+                    width: 50%;
+                }
+            }
 
             h2 {
+                width: 100%;
                 margin: 0;
                 padding: 5px;
                 text-align: center;
@@ -292,8 +326,19 @@ body {
         .partenaires-container {
             display: flex;
             flex-direction: column;
+            background-color: white;
+            align-items: center;
+
+            img {
+                width: 100%;
+
+                @media screen and (min-width : 1360px) {
+                    width: 50%;
+                }
+            }
 
             h2 {
+                width: 100%;
                 margin: 0;
                 padding: 5px;
                 text-align: center;
@@ -306,22 +351,28 @@ body {
 
         .footer-logo-address {
             display: flex;
-            flex-direction: row;
             margin: 10px;
             gap: 10px;
+            justify-content: space-between;
+
+            @media screen and (min-width:768px) {
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+
+            @media screen and (min-width: 1360px) {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
 
             a {
                 align-self: center;
 
                 img {
-                    @media screen and (min-width : 768px) {
-                        width: 50%;
-                    }
-
                     width: 100%;
-
                 }
             }
+
 
             .coordonnees {
                 display: flex;
@@ -368,6 +419,7 @@ body {
                     background-color: $violet;
                     border: none;
                     color: white;
+                    cursor: pointer;
                 }
             }
 
@@ -383,6 +435,12 @@ body {
             @media screen and (min-width : 768px) {
                 margin: 20px;
                 justify-content: space-around;
+            }
+
+            @media screen and(min-width : 1360px) {
+                gap: 0;
+                margin-left: 20%;
+                margin-right: 20%;
             }
 
             a {
@@ -403,8 +461,10 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            margin: 5px;
 
             @media screen and (min-width : 768px) {
+                justify-content: space-around;
                 margin: 20px;
             }
         }
