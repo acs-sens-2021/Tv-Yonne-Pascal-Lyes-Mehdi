@@ -35,6 +35,21 @@ body {
                 position: absolute;
                 right: 0;
                 top: 0;
+                cursor: pointer;
+                p{
+                    font-size: .8rem;
+                    margin:0;
+                }
+            }
+            .darkmode{
+                display: none;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
                 p{
                     font-size: .8rem;
                     margin:0;

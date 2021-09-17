@@ -49,9 +49,31 @@ body .navbar .nav-main .lightmode {
   position: absolute;
   right: 0;
   top: 0;
+  cursor: pointer;
 }
 
 body .navbar .nav-main .lightmode p {
+  font-size: .8rem;
+  margin: 0;
+}
+
+body .navbar .nav-main .darkmode {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+body .navbar .nav-main .darkmode p {
   font-size: .8rem;
   margin: 0;
 }
