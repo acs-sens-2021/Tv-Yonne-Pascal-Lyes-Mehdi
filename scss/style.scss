@@ -1,5 +1,9 @@
 @import "variables";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -15,7 +19,6 @@ body {
     background-color: $fondbody;
     color: white;
 
-
     .navbar {
         background-color: $fondnav;
         padding: 0;
@@ -25,23 +28,31 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 10px;
 
-            .lightmode{
+            .lightmode {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 5px;
                 position: absolute;
-                right: 0;
+                right: 10px;
                 top: 0;
                 cursor: pointer;
-                p{
+
+                @media screen and (min-width : 768px) {
+                    top: 10px;
+                }
+
+                p {
                     font-size: .8rem;
-                    margin:0;
+                    margin: 0;
                 }
             }
-            .darkmode{
+
+            .darkmode {
                 display: none;
                 flex-direction: row;
                 align-items: center;
@@ -50,13 +61,23 @@ body {
                 right: 0;
                 top: 0;
                 cursor: pointer;
-                p{
+
+                p {
                     font-size: .8rem;
-                    margin:0;
+                    margin: 0;
                 }
             }
+
             a {
                 width: 40%;
+
+                @media screen and (min-width: 768px) {
+                    width: 20%;
+                }
+
+                @media screen and (min-width : 1360px) {
+                    width: 10%;
+                }
 
                 img {
                     width: 100%;
@@ -72,6 +93,7 @@ body {
                 text-align: center;
                 font-size: .8rem;
                 align-items: center;
+                justify-content: center;
             }
 
             .burger {
@@ -80,6 +102,10 @@ body {
                 gap: 5px;
                 justify-content: center;
                 cursor: pointer;
+
+                @media screen and (min-width : 1360px) {
+                    display: none;
+                }
 
                 .barreburger {
                     display: block;
@@ -105,12 +131,19 @@ body {
 
     .lien {
         display: none;
-        // display: flex;
         flex-direction: column;
         background-color: $fontnavlink;
         width: 100%;
         text-align: center;
         border-bottom: solid 2px $violet;
+
+        @media screen and (min-width : 1360px) {
+            display: flex;
+            flex-direction: row;
+            background-color: $fondnav;
+            justify-content: center;
+            justify-content: space-around;
+        }
 
 
 
@@ -120,10 +153,24 @@ body {
             padding: 5px;
             background-color: $violet;
             font-size: 1.5rem;
+
+            @media screen and (min-width : 1360px) {
+                display: none;
+            }
         }
 
         .nav-links {
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @media screen and (min-width : 1360px) {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                margin: 0;
+            }
 
             .nav-link {
                 margin: 5px;
@@ -138,6 +185,18 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            @media screen and (min-width : 768px) {
+                justify-content: space-around;
+            }
+
+            @media screen and (min-width : 1360px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 30px;
+                margin: 0;
+            }
         }
     }
 
@@ -151,7 +210,8 @@ body {
             text-align: center;
             font-size: 1rem;
         }
-        .imgplateau{
+
+        .imgplateau {
             border: solid $violet 2px;
         }
 
@@ -163,28 +223,38 @@ body {
             margin-top: 10px;
         }
 
-        .emission {
-            margin: 5%;
+        #emissions {
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            text-align: center;
 
-            h2 {
-                margin: auto;
-                background-color: $violet;
-                padding: 5px;
+            @media screen and (min-width : 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
             }
 
-            img {
-                width: 100%;
-            }
+            .emission {
+                margin: 5%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
 
-            h3 {
-                font-size: 1rem;
-                font-weight: bold;
-            }
+                h2 {
+                    margin: auto;
+                    background-color: $violet;
+                    padding: 5px;
+                }
 
+                img {
+                    width: 100%;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+
+            }
         }
 
         .more {
@@ -242,79 +312,101 @@ body {
 
             a {
                 align-self: center;
+
                 img {
+                    @media screen and (min-width : 768px) {
+                        width: 50%;
+                    }
+
                     width: 100%;
+
                 }
             }
-            .coordonnees{
+
+            .coordonnees {
                 display: flex;
                 flex-direction: column;
-                h3{
+
+                h3 {
                     font-weight: bold;
                     font-size: 1rem;
                 }
 
-                .coordonnee{
+                .coordonnee {
                     display: flex;
                     flex-direction: row;
                     gap: 5px;
                     align-items: center;
 
-                    p{
+                    p {
                         margin: 0;
                     }
-                    #loc{
+
+                    #loc {
                         margin-top: 5px;
                         align-self: baseline;
                     }
                 }
             }
         }
-        .newsletter{
+
+        .newsletter {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
             margin: 0;
             margin-bottom: 20px;
-            form{
-               display: flex;
-               flex-direction: row; 
-               gap: 5px;
 
-               button{
-                   font-size: 1rem;
-                   background-color: $violet;
-                   border:none;
-                   color: white;
-               }
+            form {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+
+                button {
+                    font-size: 1rem;
+                    background-color: $violet;
+                    border: none;
+                    color: white;
+                }
             }
 
         }
-        .reseaux{
+
+        .reseaux {
             margin: auto;
             display: flex;
             flex-direction: row;
             gap: 10px;
             justify-content: space-between;
-            
-            a{
+
+            @media screen and (min-width : 768px) {
+                margin: 20px;
+                justify-content: space-around;
+            }
+
+            a {
                 display: flex;
                 justify-content: center;
-                align-items:center ;
+                align-items: center;
                 width: 50px;
                 height: 50px;
-                
-                svg{
+
+                svg {
                     width: 30px;
                     height: 30px;
                 }
             }
         }
-        .footer-links{
+
+        .footer-links {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            @media screen and (min-width : 768px) {
+                margin: 20px;
+            }
         }
     }
 
