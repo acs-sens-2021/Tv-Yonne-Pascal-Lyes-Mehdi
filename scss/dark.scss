@@ -7,7 +7,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: $blanc;
 }
 
 ul {
@@ -17,11 +17,11 @@ ul {
 body {
     margin: 0;
     padding: 0;
-    background-color: $fondbody;
-    color: white;
+    background-color: $blanc;
+    color: $noir;
 
     .navbar {
-        background-color: $fondnav;
+        background-color: $blanc;
         padding: 0;
         border-bottom: solid 2px $violet;
 
@@ -39,7 +39,7 @@ body {
             }
 
             .lightmode {
-                display: flex;
+                display: none;
                 flex-direction: row;
                 align-items: center;
                 gap: 5px;
@@ -63,7 +63,7 @@ body {
             }
 
             .darkmode {
-                display: none;
+                display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 5px;
@@ -75,6 +75,7 @@ body {
                 p {
                     font-size: .8rem;
                     margin: 0;
+                    color: $noir;
                 }
             }
 
@@ -104,6 +105,7 @@ body {
                 font-size: .8rem;
                 align-items: center;
                 justify-content: center;
+                color: $noir;
 
                 @media screen and (min-width :1600px) {
                     font-size: 1rem;
@@ -125,7 +127,7 @@ body {
                     display: block;
                     width: 30px;
                     height: 3px;
-                    background-color: white;
+                    background-color: $noir;
                 }
             }
 
@@ -146,10 +148,10 @@ body {
     .lien {
         display: none;
         flex-direction: column;
-        background-color: $fontnavlink;
+        background-color: $blanc;
         width: 100%;
         text-align: center;
-        border-bottom: solid 2px $violet;
+        border-top: solid 2px $violet;
 
         @media screen and (min-width : 1360px) {
             display: flex;
@@ -188,12 +190,9 @@ body {
 
             .nav-link {
                 margin: 5px;
-                color: white;
-
-                a:hover {
-                    color: $violet;
+                a{
+                    color: $noir;
                 }
-
                 @media screen and (min-width :1600px) {
                     font-size: 1.3rem;
                 }
@@ -217,8 +216,8 @@ body {
             flex-direction: row;
             justify-content: space-between;
 
-            a:hover {
-                color: $violet;
+            a{
+                color: $noir;
             }
 
             @media screen and (min-width : 768px) {
@@ -264,6 +263,7 @@ body {
             background-color: $violet;
             padding: 5px;
             margin-top: 10px;
+            color: $blanc;
         }
 
         #emissions {
@@ -290,6 +290,7 @@ body {
                 h2 {
                     margin: auto;
                     background-color: $violet;
+                    color: $blanc;
                     padding: 5px;
                 }
 
@@ -300,6 +301,7 @@ body {
                 h3 {
                     font-size: 1rem;
                     font-weight: bold;
+                    color: $noir;
                 }
 
             }
@@ -344,6 +346,7 @@ body {
                 padding: 5px;
                 text-align: center;
                 background-color: $violet;
+                color: $blanc;
             }
         }
 
@@ -386,9 +389,9 @@ body {
 
         .footer-logo-address {
             display: flex;
-            margin: 10px;
             gap: 10px;
             justify-content: space-between;
+            border-top: solid $violet 2px;
 
             @media screen and (min-width:768px) {
                 margin-right: 10%;
@@ -466,6 +469,9 @@ body {
             flex-direction: row;
             gap: 10px;
             justify-content: space-between;
+            svg{
+                color: $noir !important;
+            }
 
             @media screen and (min-width : 768px) {
                 margin: 20px;
@@ -498,6 +504,10 @@ body {
             justify-content: space-between;
             margin: 5px;
             font-size: .8rem;
+
+            a {
+                color: $noir;
+            }
 
             @media screen and (min-width : 768px) {
                 justify-content: space-around;
