@@ -16,12 +16,12 @@ ul {
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
-  color: black;
+  background-color: #282828;
+  color: white;
 }
 
 body .navbar {
-  background-color: white;
+  background-color: #1C1C1C;
   padding: 0;
   border-bottom: solid 2px #8130AC;
 }
@@ -50,7 +50,9 @@ body .navbar .nav-main {
 }
 
 body .navbar .nav-main .lightmode {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -83,9 +85,7 @@ body .navbar .nav-main .lightmode p {
 }
 
 body .navbar .nav-main .darkmode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -103,7 +103,6 @@ body .navbar .nav-main .darkmode {
 body .navbar .nav-main .darkmode p {
   font-size: .8rem;
   margin: 0;
-  color: black;
 }
 
 body .navbar .nav-main a {
@@ -126,6 +125,10 @@ body .navbar .nav-main a img {
   width: 100%;
 }
 
+body .navbar .nav-main .dark-logo {
+  display: none;
+}
+
 body .navbar .nav-main .adhesion {
   width: 100%;
   padding: 0;
@@ -141,7 +144,6 @@ body .navbar .nav-main .adhesion {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
 }
 
 @media screen and (min-width: 1600px) {
@@ -175,7 +177,7 @@ body .navbar .nav-main .burger .barreburger {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: white;
 }
 
 body .navbar .nav-main .close {
@@ -200,10 +202,10 @@ body .lien {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
+  background-color: #303030;
   width: 100%;
   text-align: center;
-  border-top: solid 2px #8130AC;
+  border-bottom: solid 2px #8130AC;
 }
 
 @media screen and (min-width: 1360px) {
@@ -266,10 +268,11 @@ body .lien .nav-links {
 
 body .lien .nav-links .nav-link {
   margin: 5px;
+  color: white;
 }
 
-body .lien .nav-links .nav-link a {
-  color: black;
+body .lien .nav-links .nav-link a:hover {
+  color: #8130AC;
 }
 
 @media screen and (min-width: 1600px) {
@@ -303,8 +306,8 @@ body .lien .nav-links2 {
           justify-content: space-between;
 }
 
-body .lien .nav-links2 a {
-  color: black;
+body .lien .nav-links2 a:hover {
+  color: #8130AC;
 }
 
 @media screen and (min-width: 768px) {
@@ -370,7 +373,6 @@ body .articles-container .last-emissions {
   background-color: #8130AC;
   padding: 5px;
   margin-top: 10px;
-  color: white;
 }
 
 body .articles-container #emissions {
@@ -417,7 +419,6 @@ body .articles-container #emissions .emission {
 body .articles-container #emissions .emission h2 {
   margin: auto;
   background-color: #8130AC;
-  color: white;
   padding: 5px;
 }
 
@@ -428,7 +429,6 @@ body .articles-container #emissions .emission img {
 body .articles-container #emissions .emission h3 {
   font-size: 1rem;
   font-weight: bold;
-  color: black;
 }
 
 body .articles-container .more {
@@ -486,7 +486,6 @@ body .articles-container .map-container h2 {
   padding: 5px;
   text-align: center;
   background-color: #8130AC;
-  color: white;
 }
 
 body .articles-container .partenaires-container {
@@ -542,11 +541,11 @@ body footer .footer-logo-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px;
   gap: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: solid #8130AC 2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -570,6 +569,14 @@ body footer .footer-logo-address a {
 }
 
 body footer .footer-logo-address a img {
+  width: 100%;
+}
+
+body footer .footer-logo-address .dark-logo {
+  display: none;
+}
+
+body footer .footer-logo-address .dark-logo img {
   width: 100%;
 }
 
@@ -662,10 +669,6 @@ body footer .reseaux {
           justify-content: space-between;
 }
 
-body footer .reseaux svg {
-  color: black !important;
-}
-
 @media screen and (min-width: 768px) {
   body footer .reseaux {
     margin: 20px;
@@ -714,10 +717,6 @@ body footer .footer-links {
           justify-content: space-between;
   margin: 5px;
   font-size: .8rem;
-}
-
-body footer .footer-links a {
-  color: black;
 }
 
 @media screen and (min-width: 768px) {
