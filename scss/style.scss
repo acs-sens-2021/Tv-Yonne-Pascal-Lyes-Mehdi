@@ -71,12 +71,19 @@ body {
                 right: 0;
                 top: 0;
                 cursor: pointer;
+                @media screen and (min-width : 768px) {
+                    top: 10px;
+                }
 
                 p {
                     font-size: .8rem;
                     margin: 0;
                     color: $noir;
-                }
+
+                    @media screen and (min-width :1600px) {
+                        font-size: 1rem;
+                    }
+                }   
             }
 
             a {
@@ -395,8 +402,9 @@ body {
         .footer-logo-address {
             display: flex;
             gap: 10px;
-            justify-content: space-between;
+            margin: 10px;
             border-top: solid $violet 2px;
+            justify-content: space-between;
 
             @media screen and (min-width:768px) {
                 margin-right: 10%;

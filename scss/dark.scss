@@ -72,9 +72,17 @@ body {
                 top: 0;
                 cursor: pointer;
 
+                @media screen and (min-width : 768px) {
+                    top: 10px;
+                }
+
                 p {
                     font-size: .8rem;
                     margin: 0;
+
+                    @media screen and (min-width :1600px) {
+                        font-size: 1rem;
+                    }
                 }
             }
 

@@ -100,10 +100,22 @@ body .navbar .nav-main .darkmode {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  body .navbar .nav-main .darkmode {
+    top: 10px;
+  }
+}
+
 body .navbar .nav-main .darkmode p {
   font-size: .8rem;
   margin: 0;
   color: black;
+}
+
+@media screen and (min-width: 1600px) {
+  body .navbar .nav-main .darkmode p {
+    font-size: 1rem;
+  }
 }
 
 body .navbar .nav-main a {
@@ -546,10 +558,11 @@ body footer .footer-logo-address {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin: 10px;
+  border-top: solid #8130AC 2px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: solid #8130AC 2px;
 }
 
 @media screen and (min-width: 768px) {

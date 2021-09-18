@@ -100,9 +100,21 @@ body .navbar .nav-main .darkmode {
   cursor: pointer;
 }
 
+@media screen and (min-width: 768px) {
+  body .navbar .nav-main .darkmode {
+    top: 10px;
+  }
+}
+
 body .navbar .nav-main .darkmode p {
   font-size: .8rem;
   margin: 0;
+}
+
+@media screen and (min-width: 1600px) {
+  body .navbar .nav-main .darkmode p {
+    font-size: 1rem;
+  }
 }
 
 body .navbar .nav-main a {
