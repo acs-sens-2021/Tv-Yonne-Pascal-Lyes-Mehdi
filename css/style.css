@@ -287,6 +287,10 @@ body .lien .nav-links .nav-link a {
   color: black;
 }
 
+body .lien .nav-links .nav-link a:hover {
+  color: #8130AC;
+}
+
 @media screen and (min-width: 1600px) {
   body .lien .nav-links .nav-link {
     font-size: 1.3rem;
@@ -320,6 +324,10 @@ body .lien .nav-links2 {
 
 body .lien .nav-links2 a {
   color: black;
+}
+
+body .lien .nav-links2 a:hover {
+  color: #8130AC;
 }
 
 @media screen and (min-width: 768px) {

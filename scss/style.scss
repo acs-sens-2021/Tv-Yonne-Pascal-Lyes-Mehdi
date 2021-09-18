@@ -71,6 +71,7 @@ body {
                 right: 0;
                 top: 0;
                 cursor: pointer;
+
                 @media screen and (min-width : 768px) {
                     top: 10px;
                 }
@@ -83,7 +84,7 @@ body {
                     @media screen and (min-width :1600px) {
                         font-size: 1rem;
                     }
-                }   
+                }
             }
 
             a {
@@ -203,6 +204,10 @@ body {
 
                 a {
                     color: $noir;
+
+                    &:hover {
+                        color: $violet;
+                    }
                 }
 
                 @media screen and (min-width :1600px) {
@@ -230,6 +235,10 @@ body {
 
             a {
                 color: $noir;
+
+                &:hover {
+                    color: $violet;
+                }
             }
 
             @media screen and (min-width : 768px) {
@@ -425,7 +434,7 @@ body {
             }
 
             .white-logo {
-                align-self:center ;
+                align-self: center;
                 display: none;
 
                 img {
