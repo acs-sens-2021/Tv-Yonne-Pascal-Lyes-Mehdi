@@ -142,6 +142,9 @@ body .navbar .nav-main .dark-logo {
 }
 
 body .navbar .nav-main .adhesion {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
