@@ -102,12 +102,12 @@ body {
                 }
 
             }
-            .dark-logo{
+
+            .dark-logo {
                 display: none;
             }
 
             .adhesion {
-                width: 100%;
                 padding: 0;
                 display: flex;
                 margin: 0;
@@ -266,6 +266,8 @@ body {
         }
 
         .imgplateau {
+            margin-right: 10%;
+            margin-left: 10%;
             border: solid $violet 2px;
         }
 
@@ -359,9 +361,9 @@ body {
         }
 
         .partenaires-container {
-
             display: flex;
             flex-direction: column;
+            background-color: white;
 
             h2 {
                 color: white;
@@ -377,8 +379,13 @@ body {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 15px;
-                background-color: white;
                 align-items: center;
+
+                @media screen and (min-width :1360px) {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    gap: 50px;
+                }
 
                 a {
                     flex-grow: 0;
@@ -418,8 +425,10 @@ body {
                     width: 100%;
                 }
             }
-            .dark-logo{
+
+            .dark-logo {
                 display: none;
+
                 img {
                     width: 100%;
                 }

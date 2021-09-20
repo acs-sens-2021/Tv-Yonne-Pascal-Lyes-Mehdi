@@ -109,7 +109,6 @@ body {
             }
 
             .adhesion {
-                width: 100%;
                 padding: 0;
                 display: flex;
                 margin: 0;
@@ -179,6 +178,7 @@ body {
             padding: 5px;
             background-color: $violet;
             font-size: 1.5rem;
+            color: white;
 
             @media screen and (min-width : 1360px) {
                 display: none;
@@ -276,6 +276,8 @@ body {
 
         .imgplateau {
             border: solid $violet 2px;
+            margin-right: 10%;
+            margin-left: 10%;
         }
 
         .last-emissions {
@@ -372,9 +374,9 @@ body {
         }
 
         .partenaires-container {
-
             display: flex;
             flex-direction: column;
+            background-color: white;
 
             h2 {
                 color: white;
@@ -390,8 +392,13 @@ body {
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 15px;
-                background-color: white;
                 align-items: center;
+
+                @media screen and (min-width :1360px) {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    gap: 50px;
+                }
 
                 a {
                     flex-grow: 0;
@@ -465,6 +472,10 @@ body {
                     #loc {
                         margin-top: 5px;
                         align-self: baseline;
+                    }
+
+                    svg {
+                        color: black !important;
                     }
                 }
             }
