@@ -207,6 +207,10 @@ body .navbar .nav-main .close .closebtn {
   height: 30px;
 }
 
+body .navbar .nav-main .closedark {
+  display: none;
+}
+
 body .lien {
   display: none;
   -webkit-box-orient: vertical;

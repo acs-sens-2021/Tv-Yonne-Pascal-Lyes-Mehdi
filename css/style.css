@@ -194,6 +194,10 @@ body .navbar .nav-main .burger .barreburger {
 }
 
 body .navbar .nav-main .close {
+  display: none;
+}
+
+body .navbar .nav-main .closedark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -203,7 +207,7 @@ body .navbar .nav-main .close {
   cursor: pointer;
 }
 
-body .navbar .nav-main .close .closebtn {
+body .navbar .nav-main .closedark .closebtndark {
   display: none;
   width: 30px;
   height: 30px;

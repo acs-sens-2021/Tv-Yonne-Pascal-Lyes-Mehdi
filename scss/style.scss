@@ -143,11 +143,15 @@ body {
             }
 
             .close {
+                display: none
+            }
+
+            .closedark {
                 display: flex;
                 align-items: center;
                 cursor: pointer;
 
-                .closebtn {
+                .closebtndark {
                     display: none;
                     width: 30px;
                     height: 30px;
