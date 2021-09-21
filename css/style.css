@@ -42,6 +42,14 @@ body .navbar .nav-main {
   padding: 10px;
 }
 
+@media screen and (min-width: 1360px) {
+  body .navbar .nav-main {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 @media screen and (min-width: 1600px) {
   body .navbar .nav-main {
     margin-left: 5%;
@@ -156,9 +164,6 @@ body .navbar .nav-main .adhesion {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: black;
 }
 
@@ -197,23 +202,23 @@ body .navbar .nav-main .burger .barreburger {
 }
 
 body .navbar .nav-main .close {
+  margin: 0;
   display: none;
-}
-
-body .navbar .nav-main .closedark {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
 
-body .navbar .nav-main .closedark .closebtndark {
-  display: none;
-  width: 30px;
-  height: 30px;
+@media screen and (min-width: 1360px) {
+  body .navbar .nav-main .close {
+    display: none;
+  }
+}
+
+body .navbar .nav-main .close p {
+  margin: 0;
+  font-size: 3.2rem;
 }
 
 body .lien {
@@ -281,7 +286,7 @@ body .lien .nav-links {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     margin: 0;
   }
 }
@@ -298,9 +303,9 @@ body .lien .nav-links .nav-link a:hover {
   color: #8130AC;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1360px) {
   body .lien .nav-links .nav-link {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
@@ -361,9 +366,9 @@ body .lien .nav-links2 a:hover {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1360px) {
   body .lien .nav-links2 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 

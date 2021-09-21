@@ -195,23 +195,16 @@ body .navbar .nav-main .burger .barreburger {
 }
 
 body .navbar .nav-main .close {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin: 0;
+  display: none;
+  color: white;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
-}
-
-body .navbar .nav-main .close .closebtn {
-  display: none;
   width: 30px;
-  height: 30px;
-}
-
-body .navbar .nav-main .closedark {
-  display: none;
+  font-size: .8rem;
+  font-weight: bold;
 }
 
 body .lien {

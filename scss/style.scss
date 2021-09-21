@@ -32,7 +32,9 @@ body {
             margin-left: 10px;
             margin-right: 10px;
             padding: 10px;
-
+            @media screen and (min-width:1360px) {
+                justify-content: space-evenly;
+            }
             @media screen and (min-width :1600px) {
                 margin-left: 5%;
                 margin-right: 5%;
@@ -116,7 +118,6 @@ body {
                 text-align: center;
                 font-size: .8rem;
                 align-items: center;
-                justify-content: center;
                 color: $noir;
 
                 @media screen and (min-width :1600px) {
@@ -144,20 +145,21 @@ body {
             }
 
             .close {
-                display: none
-            }
-
-            .closedark {
-                display: flex;
-                align-items: center;
+                margin: 0;
+                display: none;
                 cursor: pointer;
+                align-items: center;
 
-                .closebtndark {
+                @media screen and (min-width:1360px){
                     display: none;
-                    width: 30px;
-                    height: 30px;
                 }
+                p{
+                    margin: 0;
+                    font-size: 3.2rem;
+                }
+                
             }
+
         }
     }
 
@@ -200,7 +202,7 @@ body {
             @media screen and (min-width : 1360px) {
                 display: flex;
                 flex-direction: row;
-                gap: 30px;
+                gap: 10px;
                 margin: 0;
             }
 
@@ -215,8 +217,8 @@ body {
                     }
                 }
 
-                @media screen and (min-width :1600px) {
-                    font-size: 1.3rem;
+                @media screen and (min-width :1360px) {
+                    font-size: 1rem;
                 }
             }
         }
@@ -258,8 +260,8 @@ body {
                 margin: 0;
             }
 
-            @media screen and (min-width :1600px) {
-                font-size: 1.3rem;
+            @media screen and (min-width :1360px) {
+                font-size: 1rem;
             }
         }
     }
