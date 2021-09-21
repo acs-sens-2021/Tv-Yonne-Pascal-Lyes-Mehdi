@@ -118,18 +118,18 @@ body .navbar .nav-main .darkmode p {
 }
 
 body .navbar .nav-main a {
-  width: 40%;
+  width: 90px;
 }
 
 @media screen and (min-width: 768px) {
   body .navbar .nav-main a {
-    width: 20%;
+    width: 120px;
   }
 }
 
 @media screen and (min-width: 1360px) {
   body .navbar .nav-main a {
-    width: 10%;
+    width: 130px;
   }
 }
 
@@ -272,7 +272,7 @@ body .lien .nav-links {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 30px;
+    gap: 10px;
     margin: 0;
   }
 }
@@ -286,9 +286,9 @@ body .lien .nav-links .nav-link a:hover {
   color: #8130AC;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1360px) {
   body .lien .nav-links .nav-link {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
 
