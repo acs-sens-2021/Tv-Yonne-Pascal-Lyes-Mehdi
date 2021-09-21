@@ -16,8 +16,8 @@ closebtn.addEventListener("click", () => {
     burger.style.display = "flex";
 });
 
-body.addEventListener("click", () => {
-    menu.style.display = "none";
-    closebtn.style.display = "none";
-    burger.style.display = "flex";
-});
+// body.addEventListener("click", () => {
+//     menu.style.display = "none";
+//     closebtn.style.display = "none";
+//     burger.style.display = "flex";
+// });

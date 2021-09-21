@@ -29,11 +29,12 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-left: 10px;
-            margin-right: 10px;
+            gap: 10px;
             padding: 10px;
-            @media screen and (min-width:1360px) {
-                justify-content: space-evenly;
+
+            @media screen and (min-width : 1360px) {
+                display: grid;
+                grid-template-columns: 3fr 1fr 3fr;
             }
             @media screen and (min-width :1600px) {
                 margin-left: 5%;
@@ -90,14 +91,13 @@ body {
             }
 
             a {
-                width: 40%;
+                width: 90px;
 
-                @media screen and (min-width: 768px) {
-                    width: 20%;
+                @media screen and (min-width:768px) {
+                    width: 120px;
                 }
-
-                @media screen and (min-width : 1360px) {
-                    width: 10%;
+                @media screen and (min-width:1360px) {
+                    width: 130px;
                 }
 
                 img {
@@ -119,13 +119,16 @@ body {
                 font-size: .8rem;
                 align-items: center;
                 color: $noir;
-
-                @media screen and (min-width :1600px) {
+                @media screen and (min-width :768px) {
                     font-size: 1rem;
+                }
+                @media screen and (min-width :1600px) {
+                    font-size: 1.2rem;
                 }
             }
 
             .burger {
+                align-items: center;
                 display: flex;
                 flex-direction: column;
                 gap: 5px;
@@ -150,14 +153,15 @@ body {
                 cursor: pointer;
                 align-items: center;
 
-                @media screen and (min-width:1360px){
+                @media screen and (min-width:1360px) {
                     display: none;
                 }
-                p{
+
+                p {
                     margin: 0;
                     font-size: 3.2rem;
                 }
-                
+
             }
 
         }
@@ -611,9 +615,11 @@ body {
                     flex-grow: 0;
                     flex-shrink: 0;
                     flex-basis: 50%;
+
                     @media screen and (min-width: 768px) {
                         flex-basis: 30%;
                     }
+
                     @media screen and (min-width: 1360px) {
                         flex-basis: 15%;
                     }
@@ -626,6 +632,7 @@ body {
 
         }
     }
+
     .partenaires-container {
         display: flex;
         flex-direction: column;
