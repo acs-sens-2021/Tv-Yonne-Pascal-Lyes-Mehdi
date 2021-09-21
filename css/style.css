@@ -37,16 +37,16 @@ body .navbar .nav-main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
+  gap: 10px;
   padding: 10px;
 }
 
 @media screen and (min-width: 1360px) {
   body .navbar .nav-main {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 1fr 3fr;
+        grid-template-columns: 3fr 1fr 3fr;
   }
 }
 
@@ -127,18 +127,18 @@ body .navbar .nav-main .darkmode p {
 }
 
 body .navbar .nav-main a {
-  width: 40%;
+  width: 90px;
 }
 
 @media screen and (min-width: 768px) {
   body .navbar .nav-main a {
-    width: 20%;
+    width: 120px;
   }
 }
 
 @media screen and (min-width: 1360px) {
   body .navbar .nav-main a {
-    width: 10%;
+    width: 130px;
   }
 }
 
@@ -167,13 +167,22 @@ body .navbar .nav-main .adhesion {
   color: black;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) {
   body .navbar .nav-main .adhesion {
     font-size: 1rem;
   }
 }
 
+@media screen and (min-width: 1600px) {
+  body .navbar .nav-main .adhesion {
+    font-size: 1.2rem;
+  }
+}
+
 body .navbar .nav-main .burger {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
