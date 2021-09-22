@@ -26,6 +26,13 @@ body .navbar {
   border-bottom: solid 2px #8130AC;
 }
 
+@media screen and (min-width: 1360px) {
+  body .navbar {
+    border-bottom: solid 2px grey;
+    border-bottom: none;
+  }
+}
+
 body .navbar .nav-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,10 +243,10 @@ body .lien {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
   width: 100%;
   text-align: center;
-  border-top: solid 2px #8130AC;
+  padding: 10px;
+  border-top: solid 3px #8130AC;
 }
 
 @media screen and (min-width: 1360px) {
@@ -247,15 +254,18 @@ body .lien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    background-color: #8130AC;
+    border-top: solid 3px grey;
+    border-bottom: solid 3px grey;
   }
 }
 
@@ -263,13 +273,16 @@ body .lien .emissions {
   margin: auto;
   margin-top: 5px;
   padding: 5px;
-  background-color: #8130AC;
   font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: #8130AC;
   color: white;
 }
 
 @media screen and (min-width: 1360px) {
   body .lien .emissions {
+    background-color: white;
+    color: #8130AC;
     display: none;
   }
 }
@@ -283,6 +296,8 @@ body .lien .nav-links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 10px;
 }
 
@@ -304,26 +319,24 @@ body .lien .nav-links .nav-link {
   margin: 5px;
 }
 
+body .lien .nav-links .nav-link:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 body .lien .nav-links .nav-link a {
   color: black;
 }
 
-body .lien .nav-links .nav-link a:hover {
-  color: #8130AC;
+@media screen and (min-width: 1360px) {
+  body .lien .nav-links .nav-link a {
+    color: white;
+  }
 }
 
 @media screen and (min-width: 1360px) {
   body .lien .nav-links .nav-link {
     font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  body .lien .cut {
-    margin-top: .8%;
-    width: 30px;
-    height: 5px;
-    background-color: #8130AC;
   }
 }
 
@@ -343,12 +356,19 @@ body .lien .nav-links2 {
           justify-content: space-between;
 }
 
+body .lien .nav-links2 .nav-link2:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 body .lien .nav-links2 a {
   color: black;
 }
 
-body .lien .nav-links2 a:hover {
-  color: #8130AC;
+@media screen and (min-width: 1360px) {
+  body .lien .nav-links2 a {
+    color: white;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -395,7 +415,13 @@ body .articles-container {
 body .articles-container .titre-accueil {
   margin: 15px;
   text-align: center;
-  font-size: 1rem;
+  font-size: .9rem;
+}
+
+@media screen and (min-width: 768px) {
+  body .articles-container .titre-accueil {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -408,6 +434,7 @@ body .articles-container .imgplateau {
   border: solid #8130AC 2px;
   margin-right: 10%;
   margin-left: 10%;
+  border-radius: 10px;
 }
 
 body .articles-container .last-emissions {
@@ -465,10 +492,12 @@ body .articles-container #emissions .emission h2 {
   background-color: #8130AC;
   color: white;
   padding: 5px;
+  border-radius: 5px;
 }
 
 body .articles-container #emissions .emission img {
   width: 100%;
+  border-radius: 10px;
 }
 
 body .articles-container #emissions .emission h3 {
@@ -495,6 +524,7 @@ body .articles-container .more a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #8130AC;
+  border-radius: 10px;
 }
 
 body .articles-container .more a h3 {
@@ -518,6 +548,7 @@ body .articles-container .map-container {
 
 body .articles-container .map-container img {
   width: 100%;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -590,6 +621,7 @@ body .articles-container .partenaires-container .partenaires-img a {
 
 body .articles-container .partenaires-container .partenaires-img a img {
   width: 100%;
+  border-radius: 10px;
 }
 
 body footer .footer-logo-address {
@@ -715,6 +747,7 @@ body footer .newsletter form button {
   border: none;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 body footer .reseaux {
@@ -855,6 +888,7 @@ body #emissions-list .emissions h2 {
   text-align: center;
   background-color: #8130AC;
   color: white;
+  padding: 5px;
 }
 
 body #emissions-list .emissions .carroussel-emission {
