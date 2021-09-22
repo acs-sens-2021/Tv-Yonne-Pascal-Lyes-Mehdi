@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
@@ -245,7 +249,8 @@ body .lien {
           flex-direction: column;
   width: 100%;
   text-align: center;
-  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top: solid 3px #8130AC;
 }
 
@@ -254,18 +259,18 @@ body .lien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     background-color: #8130AC;
-    border-top: solid 3px grey;
-    border-bottom: solid 3px grey;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
   }
 }
 
@@ -273,7 +278,7 @@ body .lien .emissions {
   margin: auto;
   margin-top: 5px;
   padding: 5px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   background-color: #8130AC;
   color: white;
@@ -356,6 +361,10 @@ body .lien .nav-links2 {
           justify-content: space-between;
 }
 
+body .lien .nav-links2 .nav-link2 {
+  font-weight: bold;
+}
+
 body .lien .nav-links2 .nav-link2:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
@@ -430,19 +439,12 @@ body .articles-container .titre-accueil {
   }
 }
 
-body .articles-container .imgplateau {
-  border: solid #8130AC 2px;
-  margin-right: 10%;
-  margin-left: 10%;
-  border-radius: 10px;
-}
-
 body .articles-container .last-emissions {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #8130AC;
-  padding: 5px;
-  margin-top: 10px;
+  padding: 10px;
+  margin-top: 0;
   color: white;
 }
 
@@ -493,21 +495,28 @@ body .articles-container #emissions .emission h2 {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  font-size: 1rem;
 }
 
 body .articles-container #emissions .emission img {
   width: 100%;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px dimgray;
+          box-shadow: 5px 5px 5px dimgray;
 }
 
 body .articles-container #emissions .emission h3 {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
   color: black;
 }
 
 body .articles-container .more {
   margin: auto;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  background-color: #8130AC;
+  border-radius: 10px;
 }
 
 body .articles-container .more a {
@@ -523,8 +532,6 @@ body .articles-container .more a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #8130AC;
-  border-radius: 10px;
 }
 
 body .articles-container .more a h3 {
@@ -560,10 +567,11 @@ body .articles-container .map-container img {
 body .articles-container .map-container h2 {
   width: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   background-color: #8130AC;
   color: white;
+  font-size: 1.2rem;
 }
 
 body .articles-container .partenaires-container {
@@ -582,8 +590,9 @@ body .articles-container .partenaires-container h2 {
   width: 100%;
   background-color: #8130AC;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 body .articles-container .partenaires-container .partenaires-img {
@@ -599,6 +608,7 @@ body .articles-container .partenaires-container .partenaires-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1360px) {
@@ -622,6 +632,17 @@ body .articles-container .partenaires-container .partenaires-img a {
 body .articles-container .partenaires-container .partenaires-img a img {
   width: 100%;
   border-radius: 10px;
+}
+
+body footer .btnup {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 1%;
+  right: 0;
+}
+
+body footer .btnup svg {
+  color: #01c501 !important;
 }
 
 body footer .footer-logo-address {
@@ -702,6 +723,7 @@ body footer .footer-logo-address .coordonnees .coordonnee {
 
 body footer .footer-logo-address .coordonnees .coordonnee p {
   margin: 0;
+  font-size: .8rem;
 }
 
 body footer .footer-logo-address .coordonnees .coordonnee #loc {
@@ -742,7 +764,7 @@ body footer .newsletter form {
 }
 
 body footer .newsletter form button {
-  font-size: 1rem;
+  font-size: .8rem;
   background-color: #8130AC;
   border: none;
   color: white;
