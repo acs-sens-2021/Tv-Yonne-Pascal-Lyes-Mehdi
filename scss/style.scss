@@ -1,5 +1,9 @@
 @import "variables";
 
+:root {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -25,6 +29,11 @@ body {
         padding: 0;
         border-bottom: solid 2px $violet;
 
+        @media screen and (min-width: 1360px) {
+            border-bottom: solid 2px grey;
+            border-bottom: none;
+        }
+
         .nav-main {
             display: flex;
             flex-direction: row;
@@ -36,6 +45,7 @@ body {
                 display: grid;
                 grid-template-columns: 3fr 1fr 3fr;
             }
+
             @media screen and (min-width :1600px) {
                 margin-left: 5%;
                 margin-right: 5%;
@@ -96,6 +106,7 @@ body {
                 @media screen and (min-width:768px) {
                     width: 120px;
                 }
+
                 @media screen and (min-width:1360px) {
                     width: 130px;
                 }
@@ -119,9 +130,11 @@ body {
                 font-size: .8rem;
                 align-items: center;
                 color: $noir;
+
                 @media screen and (min-width :768px) {
                     font-size: 1rem;
                 }
+
                 @media screen and (min-width :1600px) {
                     font-size: 1.2rem;
                 }
@@ -170,16 +183,20 @@ body {
     .lien {
         display: none;
         flex-direction: column;
-        background-color: $blanc;
         width: 100%;
         text-align: center;
-        border-top: solid 2px $violet;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: solid 3px $violet;
 
         @media screen and (min-width : 1360px) {
             display: flex;
             flex-direction: row;
             justify-content: center;
             justify-content: space-around;
+            background-color: $violet;
+            border-top: solid 2px $noir;
+            border-bottom: solid 2px $noir;
         }
 
 
@@ -187,11 +204,14 @@ body {
             margin: auto;
             margin-top: 5px;
             padding: 5px;
+            font-size: 1.2rem;
+            border-radius: 5px;
             background-color: $violet;
-            font-size: 1.5rem;
-            color: white;
+            color: $blanc;
 
             @media screen and (min-width : 1360px) {
+                background-color: $blanc;
+                color: $violet;
                 display: none;
             }
         }
@@ -200,7 +220,9 @@ body {
             padding: 0;
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
             gap: 10px;
+
 
 
             @media screen and (min-width : 1360px) {
@@ -213,26 +235,21 @@ body {
             .nav-link {
                 margin: 5px;
 
+                &:hover {
+                    transform: scale(1.01);
+                }
+
                 a {
                     color: $noir;
 
-                    &:hover {
-                        color: $violet;
+                    @media screen and (min-width:1360px) {
+                        color: $blanc;
                     }
                 }
 
                 @media screen and (min-width :1360px) {
                     font-size: 1rem;
                 }
-            }
-        }
-
-        @media screen and (min-width:1360px) {
-            .cut {
-                margin-top: .8%;
-                width: 30px;
-                height: 5px;
-                background-color: $violet;
             }
         }
 
@@ -244,11 +261,18 @@ body {
             flex-direction: row;
             justify-content: space-between;
 
+            .nav-link2 {
+                font-weight: bold;
+                &:hover {
+                    transform: scale(1.01);
+                }
+            }
+
             a {
                 color: $noir;
 
-                &:hover {
-                    color: $violet;
+                @media screen and (min-width:1360px) {
+                    color: $blanc;
                 }
             }
 
@@ -278,25 +302,22 @@ body {
         .titre-accueil {
             margin: 15px;
             text-align: center;
-            font-size: 1rem;
+            font-size: .9rem;
+
+            @media screen and (min-width:768px) {
+                font-size: 1rem;
+            }
 
             @media screen and (min-width :1600px) {
                 font-size: 1.5rem;
             }
         }
-
-        .imgplateau {
-            border: solid $violet 2px;
-            margin-right: 10%;
-            margin-left: 10%;
-        }
-
         .last-emissions {
             text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             background-color: $violet;
-            padding: 5px;
-            margin-top: 10px;
+            padding: 10px;
+            margin-top: 0;
             color: $blanc;
         }
 
@@ -326,14 +347,18 @@ body {
                     background-color: $violet;
                     color: $blanc;
                     padding: 5px;
+                    border-radius: 5px;
+                    font-size: 1rem;
                 }
 
                 img {
                     width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 5px rgb(105, 105, 105);
                 }
 
                 h3 {
-                    font-size: 1rem;
+                    font-size: .8rem;
                     font-weight: bold;
                     color: $noir;
                 }
@@ -343,7 +368,9 @@ body {
 
         .more {
             margin: auto;
-
+            box-shadow: 5px 5px 10px grey;
+            background-color: $violet;
+            border-radius: 10px;
             a {
 
                 padding: 5px;
@@ -351,7 +378,6 @@ body {
                 flex-direction: row;
                 gap: 10px;
                 align-items: center;
-                background-color: $violet;
 
                 h3 {
                     margin: 0;
@@ -368,19 +394,21 @@ body {
 
             img {
                 width: 100%;
+                border-radius: 10px;
 
-                @media screen and (min-width : 768px) {
-                    width: 30%;
+                @media screen and (min-width : 1360px) {
+                    width: 70%;
                 }
             }
 
             h2 {
                 width: 100%;
                 margin: 0;
-                padding: 5px;
+                padding: 10px;
                 text-align: center;
                 background-color: $violet;
                 color: $blanc;
+                font-size: 1.2rem;
             }
         }
 
@@ -394,8 +422,9 @@ body {
                 width: 100%;
                 background-color: $violet;
                 margin: 0;
-                padding: 5px;
+                padding: 10px;
                 text-align: center;
+                font-size: 1.2rem;
             }
 
             .partenaires-img {
@@ -404,6 +433,7 @@ body {
                 justify-content: center;
                 gap: 15px;
                 align-items: center;
+                margin-top: 10px;
 
                 @media screen and (min-width :1360px) {
                     margin-left: 10%;
@@ -418,13 +448,25 @@ body {
 
                     img {
                         width: 100%;
+                        border-radius: 10px;
                     }
                 }
+
             }
         }
     }
 
     footer {
+        .btnup {
+            font-size: 2rem;
+            position: fixed;
+            bottom: 1%;
+            right: 0;
+
+            svg {
+                color: $vert !important;
+            }
+        }
 
         .footer-logo-address {
             display: flex;
@@ -478,6 +520,7 @@ body {
 
                     p {
                         margin: 0;
+                        font-size: .8rem;
                     }
 
                     #loc {
@@ -506,11 +549,12 @@ body {
                 gap: 5px;
 
                 button {
-                    font-size: 1rem;
+                    font-size: .8rem;
                     background-color: $violet;
                     border: none;
                     color: white;
                     cursor: pointer;
+                    border-radius: 5px;
                 }
             }
 
@@ -604,6 +648,7 @@ body {
                 text-align: center;
                 background-color: $violet;
                 color: white;
+                padding: 5px;
             }
 
             .carroussel-emission {

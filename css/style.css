@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
@@ -24,6 +28,13 @@ body .navbar {
   background-color: white;
   padding: 0;
   border-bottom: solid 2px #8130AC;
+}
+
+@media screen and (min-width: 1360px) {
+  body .navbar {
+    border-bottom: solid 2px grey;
+    border-bottom: none;
+  }
 }
 
 body .navbar .nav-main {
@@ -236,10 +247,11 @@ body .lien {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: white;
   width: 100%;
   text-align: center;
-  border-top: solid 2px #8130AC;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: solid 3px #8130AC;
 }
 
 @media screen and (min-width: 1360px) {
@@ -256,6 +268,9 @@ body .lien {
             justify-content: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    background-color: #8130AC;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
   }
 }
 
@@ -263,13 +278,16 @@ body .lien .emissions {
   margin: auto;
   margin-top: 5px;
   padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
   background-color: #8130AC;
-  font-size: 1.5rem;
   color: white;
 }
 
 @media screen and (min-width: 1360px) {
   body .lien .emissions {
+    background-color: white;
+    color: #8130AC;
     display: none;
   }
 }
@@ -283,6 +301,8 @@ body .lien .nav-links {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 10px;
 }
 
@@ -304,26 +324,24 @@ body .lien .nav-links .nav-link {
   margin: 5px;
 }
 
+body .lien .nav-links .nav-link:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 body .lien .nav-links .nav-link a {
   color: black;
 }
 
-body .lien .nav-links .nav-link a:hover {
-  color: #8130AC;
+@media screen and (min-width: 1360px) {
+  body .lien .nav-links .nav-link a {
+    color: white;
+  }
 }
 
 @media screen and (min-width: 1360px) {
   body .lien .nav-links .nav-link {
     font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1360px) {
-  body .lien .cut {
-    margin-top: .8%;
-    width: 30px;
-    height: 5px;
-    background-color: #8130AC;
   }
 }
 
@@ -343,12 +361,23 @@ body .lien .nav-links2 {
           justify-content: space-between;
 }
 
+body .lien .nav-links2 .nav-link2 {
+  font-weight: bold;
+}
+
+body .lien .nav-links2 .nav-link2:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 body .lien .nav-links2 a {
   color: black;
 }
 
-body .lien .nav-links2 a:hover {
-  color: #8130AC;
+@media screen and (min-width: 1360px) {
+  body .lien .nav-links2 a {
+    color: white;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -395,7 +424,13 @@ body .articles-container {
 body .articles-container .titre-accueil {
   margin: 15px;
   text-align: center;
-  font-size: 1rem;
+  font-size: .9rem;
+}
+
+@media screen and (min-width: 768px) {
+  body .articles-container .titre-accueil {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -404,18 +439,12 @@ body .articles-container .titre-accueil {
   }
 }
 
-body .articles-container .imgplateau {
-  border: solid #8130AC 2px;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
 body .articles-container .last-emissions {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   background-color: #8130AC;
-  padding: 5px;
-  margin-top: 10px;
+  padding: 10px;
+  margin-top: 0;
   color: white;
 }
 
@@ -465,20 +494,29 @@ body .articles-container #emissions .emission h2 {
   background-color: #8130AC;
   color: white;
   padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 body .articles-container #emissions .emission img {
   width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px dimgray;
+          box-shadow: 5px 5px 5px dimgray;
 }
 
 body .articles-container #emissions .emission h3 {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: bold;
   color: black;
 }
 
 body .articles-container .more {
   margin: auto;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  background-color: #8130AC;
+  border-radius: 10px;
 }
 
 body .articles-container .more a {
@@ -494,7 +532,6 @@ body .articles-container .more a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #8130AC;
 }
 
 body .articles-container .more a h3 {
@@ -518,21 +555,23 @@ body .articles-container .map-container {
 
 body .articles-container .map-container img {
   width: 100%;
+  border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1360px) {
   body .articles-container .map-container img {
-    width: 30%;
+    width: 70%;
   }
 }
 
 body .articles-container .map-container h2 {
   width: 100%;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   background-color: #8130AC;
   color: white;
+  font-size: 1.2rem;
 }
 
 body .articles-container .partenaires-container {
@@ -551,8 +590,9 @@ body .articles-container .partenaires-container h2 {
   width: 100%;
   background-color: #8130AC;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
 body .articles-container .partenaires-container .partenaires-img {
@@ -568,6 +608,7 @@ body .articles-container .partenaires-container .partenaires-img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 1360px) {
@@ -590,6 +631,18 @@ body .articles-container .partenaires-container .partenaires-img a {
 
 body .articles-container .partenaires-container .partenaires-img a img {
   width: 100%;
+  border-radius: 10px;
+}
+
+body footer .btnup {
+  font-size: 2rem;
+  position: fixed;
+  bottom: 1%;
+  right: 0;
+}
+
+body footer .btnup svg {
+  color: #01c501 !important;
 }
 
 body footer .footer-logo-address {
@@ -670,6 +723,7 @@ body footer .footer-logo-address .coordonnees .coordonnee {
 
 body footer .footer-logo-address .coordonnees .coordonnee p {
   margin: 0;
+  font-size: .8rem;
 }
 
 body footer .footer-logo-address .coordonnees .coordonnee #loc {
@@ -710,11 +764,12 @@ body footer .newsletter form {
 }
 
 body footer .newsletter form button {
-  font-size: 1rem;
+  font-size: .8rem;
   background-color: #8130AC;
   border: none;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 body footer .reseaux {
@@ -855,6 +910,7 @@ body #emissions-list .emissions h2 {
   text-align: center;
   background-color: #8130AC;
   color: white;
+  padding: 5px;
 }
 
 body #emissions-list .emissions .carroussel-emission {
