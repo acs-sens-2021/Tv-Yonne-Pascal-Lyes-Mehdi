@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La télé de l'Yonne</title>
+    <title>Vous souhaitez nous contacter ?</title>
     <link class="link" rel="stylesheet" href="css/style.css">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js" defer></script>
     <script src="js/burger.js" defer></script>
@@ -23,8 +23,10 @@
                 <p>Mode sombre</p>
                 <span class="iconify" data-icon="ic:outline-dark-mode" style="color: black;"></span>
             </div>
-            <a class="white-logo" href="index.html"><img src="img/logo 150x150 noir.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
-            <a class="dark-logo" href="index.html"><img src="img/logo 150x150 grey noir.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <a class="white-logo" href="index.html"><img src="img/logo 150x150 noir.png"
+                    alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <a class="dark-logo" href="index.html"><img src="img/logo 150x150 grey noir.png"
+                    alt="Logo &ldquo;Yonne TV&rdquo;"></a>
             <a href="" class="adhesion">Vous souhaitez adhérer à l'association ?</a>
             <div class="burger">
                 <span id="barre1" class="barreburger"></span>
@@ -53,64 +55,29 @@
             </ul>
         </div>
     </nav>
-    <main class="articles-container">
-        <h1 class="titre-accueil"><strong>LA TELE DE L'YONNE</strong><br>Venez découvrir nos différentes émissions sur les communes de l'Yonne !</h1>
-        <img class="imgplateau" src="img/Clipboard - 15 septembre 2021 15_07.png" alt="Plateau de tournage">
-        <h2 class="last-emissions">Nos dernières émissions</h2>
-        <section id="emissions">
-            <article class="emission">
-                <h2>Le JT</h2>
-                <a href="">
-                    <img src="img/Capture-décran-4 -536x862.png" alt="Rentré avalon">
-                    <h3>La rentrée des classes du lycée d'avalon</h3>
-                </a>
-            </article>
-            <article class="emission">
-                <h2>Les communes</h2>
-                <a href="">
-                    <img src="img/Capture-décran-2-1536x862.png" alt="Inauguration restaurant">
-                    <h3>Inauguration du restaurant "Le Pérou" à Saint-Julien-du-Sault</h3>
-                </a>
-            </article>
-            <article class="emission">
-                <h2>L'info !</h2>
-                <a href="">
-                    <img src="img/Capture-décran-3.2-1536x862.png"
-                        alt="Installation module pour la cantine de Theil sur Vanne">
-                    <h3>Installation des modules pour la cantine de Theil sur Vanne</h3>
-                </a>
-            </article>
-            <article class="emission">
-                <h2>C'était comment avant ?</h2>
-                <a href="">
-                    <img src="img/Capture-décran-5-536x862.png" alt="c'etait comment avant ?">
-                    <h3>"L'Yonne notre mémoire" "Raconte-nous !"</h3>
-                </a>
-            </article>
-            <article class="emission">
-                <h2>L'info !</h2>
-                <a href="">
-                    <img src="img/Capture-décran-1 -536x862.png" alt="Atelier de sculture">
-                    <h3>Atelier de sculpture avec Yann RAUFASTE</h3>
-                </a>
-            </article>
-            <article class="emission">
-                <h2>L'info !</h2>
-                <a href="">
-                    <img src="img/Capture-décran-1 -536x862.png" alt="Atelier de sculture">
-                    <h3>Atelier de sculpture avec Yann RAUFASTE</h3>
-                </a>
-            </article>
-        </section>
-        <div class="more">
-            <a href="emission.html">
-                <h3>Toutes nos émissions</h3>
-                <span class="iconify" data-icon="akar-icons:circle-plus" style="color: rgb(255, 255, 255);"></span>
-            </a>
-        </div>
-        <section class="map-container">
-            <h2>Nous y sommes allés !</h2>
-            <img src="img/Carte Yonne.webp" alt="Carte de l'Yonne">
+    <main class="formulaire-contact">
+        <form action="/demande" method="POST">
+            <h1>Vous souhaitez nous contacter ?</h1>
+            <div class="name">
+                <label for="name">Nom :</label>
+                <input type="text" name="name" id="name" placeholder="ex: Pagenelle">
+            </div>
+            <div class="firstname">
+                <label for="firstname">Prénom :</label>
+                <input type="text" name="firstname" id="firstname" placeholder="ex: Philipe">
+            </div>
+            <div class="email">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" placeholder="ex: pagenalle.philipe@gmail.com">
+            </div>
+            <div class="message">
+                <label for="message">Votre message :</label>
+                <textarea name="demande" id="demande" cols="30" rows="5" maxlength="501" placeholder="501 caractères maximum"></textarea>
+            </div>
+            <button>Envoyer votre demande</button>
+        </form>
+        <section class="imgplateau">
+            <img src="img/Clipboard - 15 septembre 2021 15_07.png" alt="image plateau la télé de l'Yonne">
         </section>
         <section class="partenaires-container">
             <h2>Nos partenaires</h2>
@@ -135,7 +102,8 @@
         </section>
     </main>
     <footer>
-        <a class="btnup" href="#top"><span class="iconify" data-icon="akar-icons:circle-chevron-up" style="color: black;"></span></a>
+        <a class="btnup" href="#top"><span class="iconify" data-icon="akar-icons:circle-chevron-up"
+                style="color: black;"></span></a>
         <section class="footer-logo-address">
             <a class="white-logo" href="index.html"><img src="img/logo 150x150 noir.png.png"
                     alt="Logo &ldquo;Yonne TV&rdquo;"></a>

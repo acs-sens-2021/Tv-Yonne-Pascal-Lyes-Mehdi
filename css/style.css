@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+img {
+  vertical-align: middle;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -437,6 +441,11 @@ body .articles-container .titre-accueil {
   body .articles-container .titre-accueil {
     font-size: 1.5rem;
   }
+}
+
+body .articles-container .titre-accueil strong {
+  font-size: 1.3rem;
+  color: #8130AC;
 }
 
 body .articles-container .last-emissions {
@@ -1005,5 +1014,57 @@ body .partenaires-container .partenaires-img a {
 
 body .partenaires-container .partenaires-img a img {
   width: 100%;
+}
+
+body .formulaire-contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .formulaire-contact form h1 {
+  font-size: 1.2rem;
+}
+
+body .formulaire-contact form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+}
+
+body .formulaire-contact form div input {
+  width: 100%;
+}
+
+body .formulaire-contact form button {
+  margin: 15px;
+  background-color: #8130AC;
+  padding: 5px;
+  color: white;
+}
+
+body .imgplateau img {
+  width: 100%;
+}
+
+body .partenaires-container h2 {
+  font-size: 1.2rem;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
