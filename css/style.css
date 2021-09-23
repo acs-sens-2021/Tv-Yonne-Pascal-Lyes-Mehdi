@@ -1050,6 +1050,11 @@ body .formulaire-contact form div {
 
 body .formulaire-contact form div input {
   width: 100%;
+  border: solid 1.5px black;
+}
+
+body .formulaire-contact form div textarea {
+  border: solid 1.5px black;
 }
 
 body .formulaire-contact form button {

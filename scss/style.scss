@@ -741,6 +741,10 @@ body {
                 
                 input{
                     width: 100%;
+                    border: solid 1.5px black;
+                }
+                textarea{
+                    border: solid 1.5px black;
                 }
             }
             button{
