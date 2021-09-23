@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La télé de l'Yonne</title>
+    <link class="link" rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/mode.js" defer></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <section class="nav-main">
+            <div class="lightmode">
+                <p>Mode clair</p>
+                <span class="iconify" data-icon="ic:baseline-light-mode" style="color: rgb(255, 255, 255);"></span>
+            </div>
+            <div class="darkmode">
+                <p>Mode sombre</p>
+                <span class="iconify" data-icon="ic:outline-dark-mode" style="color: black;"></span>
+            </div>
+            <a class="white-logo" href="index.html"><img src="img/logo 150x150 noir.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <a class="dark-logo" href="index.html"><img src="img/logo 150x150 grey noir.png" alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <a href="" class="adhesion">Vous souhaitez adhérer à l'association ?</a>
+            <div class="burger">
+                <span id="barre1" class="barreburger"></span>
+                <span id="barre2" class="barreburger"></span>
+                <span id="barre3" class="barreburger"></span>
+            </div>
+            <div class="close">
+                <p>&times;</p>
+            </div>
+        </section>
+        <div class="lien">
+            <h1 class="emissions">Nos émissions</h1>
+            <ul class="nav-links">
+                <li class="nav-link"><a href="emission.html"><strong>Toutes nos émissions</strong></a></li>
+                <li class="nav-link"><a href="emission.html#decouvert">A découvert</a></li>
+                <li class="nav-link"><a href="emission.html#avant">C'était comment avant ?</a></li>
+                <li class="nav-link"><a href="emission.html#pros">Images de pros</a></li>
+                <li class="nav-link"><a href="emission.html#jt">Le JT</a></li>
+                <li class="nav-link"><a href="emission.html#couverts">Restons couverts</a></li>
+                <li class="nav-link"><a href="emission.html#culture">Top culture</a></li>
+                <li class="nav-link"><a href="emission.html#garage">Voix de garage</a></li>
+            </ul>
+            <ul class="nav-links2">
+                <li class="nav-link2"><a href="">Qui sommes nous ?</a></li>
+                <li class="nav-link2"><a href="">Notre équipe</a></li>
+            </ul>
+        </div>
+    </nav>
+    <iframe id="haWidget" allowtransparency="true" scrolling="auto" src="https://www.helloasso.com/associations/la-tele-de-l-yonne/formulaires/1/widget" style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
+    <footer>
+        <a class="btnup" href="#top"><span class="iconify" data-icon="akar-icons:circle-chevron-up" style="color: black;"></span></a>
+        <section class="footer-logo-address">
+            <a class="white-logo" href="index.html"><img src="img/logo 150x150 noir.png.png"
+                    alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <a class="dark-logo" href="index.html"><img src="img/logo 150x150.png"
+                    alt="Logo &ldquo;Yonne TV&rdquo;"></a>
+            <address class="coordonnees">
+                <h3>Contacts :</h3>
+                <div class="coordonnee">
+                    <span id="loc" class="iconify" data-icon="akar-icons:location"
+                        style="color: rgb(255, 255, 255);"></span>
+                    <p>Bâtiment Adrien Durant <br>Rue de le Pérouse <br>89300 Joigny</p>
+                </div>
+                <div class="coordonnee">
+                    <span class="iconify" data-icon="el:phone-alt" style="color: rgb(255, 255, 255);"></span>
+                    <p>06 07 13 07 29</p>
+                </div>
+                <div class="coordonnee">
+                    <span class="iconify" data-icon="cib:mail-ru" style="color: rgb(255, 255, 255);"></span>
+                    <p>redac@lateledelyonne.fr</p>
+                </div>
+            </address>
+        </section>
+        <div class="newsletter">
+            <p>Inscrivez-vous à la newsletter !</p>
+            <form action="suscribe" method="POST">
+                <input type="email" name="email" id="email" placeholder="Adresse e-mail">
+                <button>Je m'abonne</button>
+            </form>
+        </div>
+        <address class="reseaux">
+            <a href=""><span class="iconify" data-icon="ant-design:twitter-circle-filled"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:facebook-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:linkedin-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:instagram-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+            <a href=""><span class="iconify" data-icon="akar-icons:youtube-fill"
+                    style="color: rgb(255, 255, 255);"></span></a>
+        </address>
+        <div class="footer-links">
+            <a href="mentions-legal.html">Mentions légales</a>
+            <a href="Cookies.html">Cookies</a>
+            <a href="contact.html">Nous contacter</a>
+        </div>
+    </footer>
+</body>
+
+</html>
