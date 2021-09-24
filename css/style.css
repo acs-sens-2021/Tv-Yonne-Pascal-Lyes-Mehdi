@@ -1,9 +1,9 @@
 :root {
   scroll-behavior: smooth;
+  font-family: 'Orbitron', sans-serif;
 }
 
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -161,6 +161,18 @@ body .navbar .nav-main a img {
   width: 100%;
 }
 
+body .navbar .nav-main .dark-logo {
+  margin: auto;
+  -webkit-animation: rotation 5s infinite;
+          animation: rotation 5s infinite;
+}
+
+@media screen and (min-width: 768px) {
+  body .navbar .nav-main .dark-logo {
+    margin: 0;
+  }
+}
+
 body .navbar .nav-main .white-logo {
   display: none;
 }
@@ -184,14 +196,13 @@ body .navbar .nav-main .titre-adhesion .titre {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #333333;
 }
 
 @media screen and (min-width: 768px) {
   body .navbar .nav-main .titre-adhesion .titre {
-    font-size: 1.5rem;
     margin: 15px;
   }
 }
@@ -221,6 +232,10 @@ body .navbar .nav-main .titre-adhesion .adhesion {
           align-items: center;
   color: white;
   background-color: #8130AC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -235,8 +250,50 @@ body .navbar .nav-main .titre-adhesion .adhesion {
   }
 }
 
-body .navbar .nav-main .titre-adhesion .adhesion:hover {
-  background-color: #333333;
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(250deg);
+            transform: rotate(250deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(250deg);
+            transform: rotate(250deg);
+  }
+  75% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 body .navbar .nav-main .burger {
@@ -301,6 +358,7 @@ body .lien {
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: solid 3px #8130AC;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 1360px) {
@@ -374,8 +432,8 @@ body .lien .nav-links .nav-link {
 }
 
 body .lien .nav-links .nav-link:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body .lien .nav-links .nav-link a {
@@ -415,8 +473,8 @@ body .lien .nav-links2 .nav-link2 {
 }
 
 body .lien .nav-links2 .nav-link2:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body .lien .nav-links2 a {
@@ -474,6 +532,7 @@ body .articles-container .titre-accueil {
   margin: 15px;
   text-align: center;
   font-size: .9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -558,6 +617,7 @@ body .articles-container #emissions .emission h3 {
   font-size: .8rem;
   font-weight: bold;
   color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body .articles-container .more {
@@ -781,6 +841,7 @@ body footer .footer-logo-address .coordonnees .coordonnee {
 body footer .footer-logo-address .coordonnees .coordonnee p {
   margin: 0;
   font-size: .8rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
