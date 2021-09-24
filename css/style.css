@@ -186,12 +186,22 @@ body .navbar .nav-main .titre-adhesion .titre {
   margin-bottom: 10px;
   font-size: 1.2rem;
   text-align: center;
-  color: #8130AC;
+  color: #333333;
 }
 
 @media screen and (min-width: 768px) {
   body .navbar .nav-main .titre-adhesion .titre {
     font-size: 1.5rem;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  body .navbar .nav-main .titre-adhesion .titre {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 2.5rem;
   }
 }
 
@@ -223,6 +233,10 @@ body .navbar .nav-main .titre-adhesion .adhesion {
   body .navbar .nav-main .titre-adhesion .adhesion {
     font-size: 1.2rem;
   }
+}
+
+body .navbar .nav-main .titre-adhesion .adhesion:hover {
+  background-color: #333333;
 }
 
 body .navbar .nav-main .burger {

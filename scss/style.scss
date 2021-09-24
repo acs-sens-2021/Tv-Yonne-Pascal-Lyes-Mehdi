@@ -126,21 +126,25 @@ body {
             }
 
             .titre-adhesion {
-
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 align-self: center;
+
                 .titre{
                     margin: 0;
                     margin-top: 10px;
                     margin-bottom: 10px;
                     font-size: 1.2rem;
                     text-align: center;
-                    color: $violet;
+                    color: #333333;
                     @media screen and (min-width:768px) {
                         font-size: 1.5rem;
-                        margin: ;
+                        margin: 15px;
+                    }
+                    @media screen and(min-width:1360px) {
+                        width: max-content;
+                        font-size: 2.5rem;
                     }
                 }
                 .adhesion {
@@ -160,6 +164,9 @@ body {
 
                     @media screen and (min-width :1600px) {
                         font-size: 1.2rem;
+                    }
+                    &:hover{
+                        background-color: #333333;
                     }
                 }
             }
