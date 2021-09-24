@@ -5,12 +5,14 @@
 }
 
 * {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-img{
+
+img {
     vertical-align: middle;
 }
+
 a {
     text-decoration: none;
     color: $blanc;
@@ -123,22 +125,42 @@ body {
                 display: none;
             }
 
-            .adhesion {
-                width: max-content;
-                padding: 0;
+            .titre-adhesion {
+
                 display: flex;
-                margin: 0;
-                text-align: center;
-                font-size: .8rem;
+                flex-direction: column;
                 align-items: center;
-                color: $noir;
-
-                @media screen and (min-width :768px) {
-                    font-size: 1rem;
-                }
-
-                @media screen and (min-width :1600px) {
+                align-self: center;
+                .titre{
+                    margin: 0;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                     font-size: 1.2rem;
+                    text-align: center;
+                    color: $violet;
+                    @media screen and (min-width:768px) {
+                        font-size: 1.5rem;
+                        margin: ;
+                    }
+                }
+                .adhesion {
+                    width: max-content;
+                    padding: 5px;
+                    display: flex;
+                    margin: 0;
+                    text-align: center;
+                    font-size: .8rem;
+                    align-items: center;
+                    color: $blanc;
+                    background-color: $violet;
+
+                    @media screen and (min-width :768px) {
+                        font-size: 1rem;
+                    }
+
+                    @media screen and (min-width :1600px) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
 
@@ -265,6 +287,7 @@ body {
 
             .nav-link2 {
                 font-weight: bold;
+
                 &:hover {
                     transform: scale(1.01);
                 }
@@ -313,11 +336,8 @@ body {
             @media screen and (min-width :1600px) {
                 font-size: 1.5rem;
             }
-            strong{
-                font-size: 1.3rem;
-                color: $violet;
-            }
         }
+
         .last-emissions {
             text-align: center;
             font-size: 1.2rem;
@@ -377,6 +397,7 @@ body {
             box-shadow: 5px 5px 10px grey;
             background-color: $violet;
             border-radius: 10px;
+
             a {
 
                 padding: 5px;
@@ -482,6 +503,7 @@ body {
             justify-content: space-between;
 
             @media screen and (min-width:768px) {
+                justify-content: space-around;
                 margin-right: 10%;
                 margin-left: 10%;
             }
@@ -516,6 +538,10 @@ body {
                 h3 {
                     font-weight: bold;
                     font-size: 1rem;
+
+                    @media screen and (min-width:768px) {
+                        font-size: 1.2rem;
+                    }
                 }
 
                 .coordonnee {
@@ -527,6 +553,10 @@ body {
                     p {
                         margin: 0;
                         font-size: .8rem;
+
+                        @media screen and (min-width:768px) {
+                            font-size: 1rem;
+                        }
                     }
 
                     #loc {
@@ -722,32 +752,37 @@ body {
             }
         }
     }
+
     // Page de contact
-    .formulaire-contact{
-        
-        form{
+    .formulaire-contact {
+
+        form {
             display: flex;
             flex-direction: column;
             align-items: center;
-            h1{
+
+            h1 {
                 font-size: 1.2rem;
             }
-            div{
+
+            div {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 align-items: center;
                 padding: 5px;
-                
-                input{
+
+                input {
                     width: 100%;
                     border: solid 1.5px black;
                 }
-                textarea{
+
+                textarea {
                     border: solid 1.5px black;
                 }
             }
-            button{
+
+            button {
                 margin: 15px;
                 background-color: $violet;
                 padding: 5px;
@@ -755,15 +790,17 @@ body {
             }
         }
     }
-    .imgplateau{
 
-        img{
+    .imgplateau {
+
+        img {
             width: 100%;
         }
     }
-    .partenaires-container{
 
-        h2{
+    .partenaires-container {
+
+        h2 {
             font-size: 1.2rem;
             padding: 10px;
         }
