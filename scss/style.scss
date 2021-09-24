@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
     font-family: 'Orbitron', sans-serif;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -119,17 +120,19 @@ body {
                 }
 
             }
-            .dark-logo{
-                margin: auto;
 
-            .animation{
-                animation: rotation 5s infinite;
-            }  
+            .dark-logo {
+                margin: auto;
 
                 @media screen and (min-width:768px) {
                     margin: 0;
                 }
             }
+
+            .animation {
+                animation: rotation 5s;
+            }
+
             .white-logo {
                 display: none;
             }
@@ -140,21 +143,24 @@ body {
                 align-items: center;
                 align-self: center;
 
-                .titre{
+                .titre {
                     margin: 0;
                     margin-top: 10px;
                     margin-bottom: 10px;
                     font-size: 1.5rem;
                     text-align: center;
                     color: #333333;
+
                     @media screen and (min-width:768px) {
                         margin: 15px;
                     }
+
                     @media screen and(min-width:1360px) {
                         width: max-content;
                         font-size: 2.5rem;
                     }
                 }
+
                 .adhesion {
                     width: max-content;
                     padding: 5px;
@@ -176,23 +182,28 @@ body {
                     @media screen and (min-width :1600px) {
                         font-size: 1.2rem;
                     }
+
                     // &:hover{
                     // }
                     @keyframes rotation {
-                        0%{
+                        0% {
                             transform: rotate(0deg);
                         }
-                        25%{
-                            transform: rotate(90deg);
+
+                        25% {
+                            transform: rotate(-90deg) scale(1.1);
                         }
-                        50%{
-                            transform: rotate(250deg);
+
+                        50% {
+                            transform: rotate(-250deg) scale(1.25);
                         }
-                        75%{
-                            transform: rotate(360deg);
+
+                        75% {
+                            transform: rotate(-360deg) scale(1.1);
                         }
-                        100%{
-                            transform: rotate(0deg);
+
+                        100% {
+                            transform: rotate(0deg) scale(1);
                         }
                     }
                 }
@@ -701,6 +712,8 @@ body {
             h1 {
                 font-size: 1rem;
                 text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             }
 
             form {
@@ -810,6 +823,10 @@ body {
                 align-items: center;
                 padding: 5px;
 
+                label{
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                }
                 input {
                     width: 100%;
                     border: solid 1.5px black;

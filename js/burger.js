@@ -28,5 +28,5 @@ const logo = document.querySelector(".dark-logo");
 
 titre.addEventListener("click", () =>{
 
-    logo.classList.add("animation");
+    logo.classList.toggle("animation");
 });
