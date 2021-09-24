@@ -163,6 +163,9 @@ body .navbar .nav-main a img {
 
 body .navbar .nav-main .dark-logo {
   margin: auto;
+}
+
+body .navbar .nav-main .dark-logo .animation {
   -webkit-animation: rotation 5s infinite;
           animation: rotation 5s infinite;
 }

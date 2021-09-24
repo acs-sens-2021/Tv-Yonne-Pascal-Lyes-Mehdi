@@ -21,3 +21,12 @@ closebtn.addEventListener("click", () => {
 //     closebtn.style.display = "none";
 //     burger.style.display = "flex";
 // });
+
+// Rotate logo
+const titre = document.querySelector(".titre")
+const logo = document.querySelector(".dark-logo");
+
+titre.addEventListener("click", () =>{
+
+    logo.classList.add("animation");
+});
