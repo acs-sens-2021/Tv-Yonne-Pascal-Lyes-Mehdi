@@ -532,6 +532,7 @@ body {
     }
 
     footer {
+        
         .btnup {
             font-size: 2rem;
             position: fixed;
@@ -539,7 +540,7 @@ body {
             right: 0;
 
             svg {
-                color: $vert !important;
+                color: $btnup !important;
             }
         }
 
@@ -742,6 +743,7 @@ body {
                 display: flex;
                 flex-wrap: nowrap;
                 overflow-x: auto;
+                margin-bottom: 50px;
 
                 a {
                     flex-grow: 0;
@@ -761,6 +763,33 @@ body {
                     }
                 }
             }
+
+        }
+        .modal-video{
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            display: none;
+            flex-direction:column;
+            border: solid 2px black;
+            background-color: white;
+            z-index: 50;
+            img{
+                width: 100%;
+            }
+        }
+        .fond{
+            display: none;
+            width: 5000px;
+            height: 5000px;
+            background-color: black;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            z-index: 40;
+            opacity: 0.5;
 
         }
     }
