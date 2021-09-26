@@ -2,7 +2,7 @@
 
 :root {
     scroll-behavior: smooth;
-    font-family: 'Orbitron', sans-serif;
+    font-family: $orbitron;
 }
 
 * {
@@ -171,7 +171,7 @@ body {
                     align-items: center;
                     color: $blanc;
                     background-color: $violet;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family:$geneva;
                     box-shadow: 5px 5px 10px grey;
                     border-radius: 10px;
 
@@ -257,7 +257,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
         border-top: solid 3px $violet;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: $geneva;
 
         @media screen and (min-width : 1360px) {
             display: flex;
@@ -374,7 +374,7 @@ body {
             margin: 15px;
             text-align: center;
             font-size: .9rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: $geneva;
 
             @media screen and (min-width:768px) {
                 font-size: 1rem;
@@ -434,7 +434,7 @@ body {
                     font-size: .8rem;
                     font-weight: bold;
                     color: $noir;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: $geneva;
                 }
 
             }
@@ -602,7 +602,7 @@ body {
                     p {
                         margin: 0;
                         font-size: .8rem;
-                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        font-family: $geneva;
 
                         @media screen and (min-width:768px) {
                             font-size: 1rem;
@@ -713,7 +713,7 @@ body {
             h1 {
                 font-size: 1rem;
                 text-align: center;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-family: $geneva;
 
             }
 
@@ -853,7 +853,7 @@ body {
                 padding: 5px;
 
                 label{
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-family: $geneva;
 
                 }
                 input {
@@ -887,6 +887,56 @@ body {
         h2 {
             font-size: 1.2rem;
             padding: 10px;
+        }
+    }
+
+    // Page Qui sommes-nous
+    .descriptions{
+        display: flex;
+        flex-direction: column;
+
+        .articles{
+            display: flex;
+            flex-direction: column;
+            font-family: $geneva;
+            
+            h1{
+                margin: 0;
+                padding: 5px;
+                width: 100%;
+                text-align: center;
+                color: $blanc;
+                background-color: $violet;
+                font-size: 1.5rem;
+            }
+            .article{
+                margin: 10px;
+                @media screen and (min-width:768px) {
+                    text-align: center;
+                }
+                h2{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+        h1{
+            width: 100%;
+            background-color: $violet;
+            color: $blanc;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 5px;
+        }
+        .equipe{
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            text-align: center;
+
+            img{
+                width: 100%;
+            }
         }
     }
 }

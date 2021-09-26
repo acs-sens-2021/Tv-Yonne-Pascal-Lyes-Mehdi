@@ -1,6 +1,6 @@
 :root {
   scroll-behavior: smooth;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 
 * {
@@ -235,7 +235,7 @@ body .navbar .nav-main .titre-adhesion .adhesion {
           align-items: center;
   color: white;
   background-color: #8130AC;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-box-shadow: 5px 5px 10px grey;
           box-shadow: 5px 5px 10px grey;
   border-radius: 10px;
@@ -361,7 +361,7 @@ body .lien {
   padding-top: 15px;
   padding-bottom: 15px;
   border-top: solid 3px #8130AC;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 1360px) {
@@ -535,7 +535,7 @@ body .articles-container .titre-accueil {
   margin: 15px;
   text-align: center;
   font-size: .9rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -620,7 +620,7 @@ body .articles-container #emissions .emission h3 {
   font-size: .8rem;
   font-weight: bold;
   color: black;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body .articles-container .more {
@@ -844,7 +844,7 @@ body footer .footer-logo-address .coordonnees .coordonnee {
 body footer .footer-logo-address .coordonnees .coordonnee p {
   margin: 0;
   font-size: .8rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -1004,7 +1004,7 @@ body #emissions-list .search {
 body #emissions-list .search h1 {
   font-size: 1rem;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body #emissions-list .search form {
@@ -1203,7 +1203,7 @@ body .formulaire-contact form div {
 }
 
 body .formulaire-contact form div label {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body .formulaire-contact form div input {
@@ -1229,5 +1229,73 @@ body .imgplateau img {
 body .partenaires-container h2 {
   font-size: 1.2rem;
   padding: 10px;
+}
+
+body .descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .descriptions .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body .descriptions .articles h1 {
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: #8130AC;
+  font-size: 1.5rem;
+}
+
+body .descriptions .articles .article {
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  body .descriptions .articles .article {
+    text-align: center;
+  }
+}
+
+body .descriptions .articles .article h2 {
+  text-align: center;
+  width: 100%;
+}
+
+body .descriptions h1 {
+  width: 100%;
+  background-color: #8130AC;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+body .descriptions .equipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  text-align: center;
+}
+
+body .descriptions .equipe img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
