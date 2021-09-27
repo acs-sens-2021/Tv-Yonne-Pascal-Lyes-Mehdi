@@ -199,7 +199,7 @@ body .navbar .nav-main .titre-adhesion .titre {
   margin: 0;
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #333333;
 }
@@ -547,6 +547,15 @@ body .articles-container .titre-accueil {
 @media screen and (min-width: 1600px) {
   body .articles-container .titre-accueil {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  body .articles-container .imgplateau {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    border-radius: 10px;
   }
 }
 
@@ -1250,6 +1259,16 @@ body .descriptions .articles {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 1240px) {
+  body .descriptions .articles img {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+  }
 }
 
 body .descriptions .articles h1 {

@@ -147,7 +147,7 @@ body {
                     margin: 0;
                     margin-top: 10px;
                     margin-bottom: 10px;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     text-align: center;
                     color: #333333;
 
@@ -171,7 +171,7 @@ body {
                     align-items: center;
                     color: $blanc;
                     background-color: $violet;
-                    font-family:$geneva;
+                    font-family: $geneva;
                     box-shadow: 5px 5px 10px grey;
                     border-radius: 10px;
 
@@ -385,6 +385,16 @@ body {
             }
         }
 
+        .imgplateau {
+
+            @media screen and (min-width:1240px) {
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-bottom: 3%;
+                border-radius: 10px;
+            }
+        }
+
         .last-emissions {
             text-align: center;
             font-size: 1.2rem;
@@ -532,7 +542,7 @@ body {
     }
 
     footer {
-        
+
         .btnup {
             font-size: 2rem;
             position: fixed;
@@ -765,21 +775,24 @@ body {
             }
 
         }
-        .modal-video{
+
+        .modal-video {
             position: fixed;
             transform: translate(-50%, -50%);
             top: 50%;
             left: 50%;
             display: none;
-            flex-direction:column;
+            flex-direction: column;
             border: solid 2px black;
             background-color: white;
             z-index: 50;
-            img{
+
+            img {
                 width: 100%;
             }
         }
-        .fond{
+
+        .fond {
             display: none;
             width: 5000px;
             height: 5000px;
@@ -852,10 +865,11 @@ body {
                 align-items: center;
                 padding: 5px;
 
-                label{
+                label {
                     font-family: $geneva;
 
                 }
+
                 input {
                     width: 100%;
                     border: solid 1.5px black;
@@ -891,16 +905,27 @@ body {
     }
 
     // Page Qui sommes-nous
-    .descriptions{
+    .descriptions {
         display: flex;
         flex-direction: column;
 
-        .articles{
+        .articles {
             display: flex;
             flex-direction: column;
             font-family: $geneva;
-            
-            h1{
+
+            img {
+
+                @media screen and (min-width:1240px) {
+                    margin-left: 10%;
+                    margin-right: 10%;
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                    border-radius: 10px;
+                }
+            }
+
+            h1 {
                 margin: 0;
                 padding: 5px;
                 width: 100%;
@@ -909,18 +934,22 @@ body {
                 background-color: $violet;
                 font-size: 1.5rem;
             }
-            .article{
+
+            .article {
                 margin: 10px;
+
                 @media screen and (min-width:768px) {
                     text-align: center;
                 }
-                h2{
+
+                h2 {
                     text-align: center;
                     width: 100%;
                 }
             }
         }
-        h1{
+
+        h1 {
             width: 100%;
             background-color: $violet;
             color: $blanc;
@@ -928,13 +957,14 @@ body {
             font-size: 1.5rem;
             padding: 5px;
         }
-        .equipe{
+
+        .equipe {
             display: flex;
             overflow-x: auto;
             gap: 10px;
             text-align: center;
 
-            img{
+            img {
                 width: 100%;
             }
         }
