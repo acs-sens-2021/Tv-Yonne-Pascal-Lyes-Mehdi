@@ -236,6 +236,7 @@ body {
                 display: none;
                 cursor: pointer;
                 align-items: center;
+                width: 30px;
 
                 @media screen and (min-width: 1240px) {
                     display: none;
@@ -939,10 +940,10 @@ body {
 
             .article {
                 margin: 10px;
-                margin-left: 50px;
-                margin-right: 50px;
-
+                
                 @media screen and (min-width:768px) {
+                    margin-left: 50px;
+                    margin-right: 50px;
                     text-align: center;
                 }
 
@@ -969,7 +970,8 @@ body {
             text-align: center;
 
             img {
-                width: 100%;
+                width: 180px;
+                height: 180px;
             }
         }
     }

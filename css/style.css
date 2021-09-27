@@ -339,6 +339,7 @@ body .navbar .nav-main .close {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 30px;
 }
 
 @media screen and (min-width: 1240px) {
@@ -1289,12 +1290,12 @@ body .descriptions .articles h1 {
 
 body .descriptions .articles .article {
   margin: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 @media screen and (min-width: 768px) {
   body .descriptions .articles .article {
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;
   }
 }
@@ -1323,6 +1324,7 @@ body .descriptions .equipe {
 }
 
 body .descriptions .equipe img {
-  width: 100%;
+  width: 180px;
+  height: 180px;
 }
 /*# sourceMappingURL=style.css.map */
