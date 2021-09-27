@@ -7,7 +7,7 @@
 
 * {
     box-sizing: border-box;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 img {
@@ -939,6 +939,8 @@ body {
 
             .article {
                 margin: 10px;
+                margin-left: 50px;
+                margin-right: 50px;
 
                 @media screen and (min-width:768px) {
                     text-align: center;
