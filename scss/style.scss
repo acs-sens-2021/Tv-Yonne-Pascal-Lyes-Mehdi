@@ -417,21 +417,18 @@ body {
         #emissions {
             display: flex;
             flex-direction: column;
-
-            @media screen and (min-width : 768px) {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
+            align-items: center;
 
             @media screen and (min-width :  1240px) {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
 
             .emission {
                 margin: 5%;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 10px;
                 text-align: center;
 
