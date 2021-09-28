@@ -794,41 +794,21 @@ body {
             border: solid 2px black;
             background-color: white;
             z-index: 50;
-            .iframetab{
-                display: none;
-            }
-            .iframeordi{
-                display: none;
-            }
-            @media screen and (min-width:768px) {
-                width: 700px;
-                height: 400px;
-                .iframetab{
-                    display: initial;
-                }
-                .iframemob{
-                    display: none;
-                }
-                .iframeordi{
-                    display: none;
-                }
-            }
-            @media screen and (min-width:1240px) {
-                width: 1200px;
-                height: 600px;
-                align-items: center;
-                .iframetab{
-                    display: none;
-                }
-                .iframemob{
-                    display: none;
-                }
-                .iframeordi{
-                    display: initial;
 
+            iframe {
+
+                @media screen and (min-width:768px) {
+                    width: 700px;
+                    height: 400px;
+                }
+
+                @media screen and (min-width:1240px) {
+                    width: 1100px;
+                    height: 500px;
                 }
             }
-            .close-modal{
+
+            .close-modal {
                 position: absolute;
                 transform: translate(-50%, -50%);
                 top: 20px;

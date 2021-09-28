@@ -1114,46 +1114,17 @@ body #emissions-list .modal-video {
   z-index: 50;
 }
 
-body #emissions-list .modal-video .iframetab {
-  display: none;
-}
-
-body #emissions-list .modal-video .iframeordi {
-  display: none;
-}
-
 @media screen and (min-width: 768px) {
-  body #emissions-list .modal-video {
+  body #emissions-list .modal-video iframe {
     width: 700px;
     height: 400px;
-  }
-  body #emissions-list .modal-video .iframetab {
-    display: initial;
-  }
-  body #emissions-list .modal-video .iframemob {
-    display: none;
-  }
-  body #emissions-list .modal-video .iframeordi {
-    display: none;
   }
 }
 
 @media screen and (min-width: 1240px) {
-  body #emissions-list .modal-video {
-    width: 1200px;
-    height: 600px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  body #emissions-list .modal-video .iframetab {
-    display: none;
-  }
-  body #emissions-list .modal-video .iframemob {
-    display: none;
-  }
-  body #emissions-list .modal-video .iframeordi {
-    display: initial;
+  body #emissions-list .modal-video iframe {
+    width: 1100px;
+    height: 500px;
   }
 }
 
