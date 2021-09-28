@@ -25,8 +25,13 @@ closebtn.addEventListener("click", () => {
 // Rotate logo
 const titre = document.querySelector(".titre")
 const logo = document.querySelector(".dark-logo");
+const logo2 = document.querySelector(".white-logo");
 
 titre.addEventListener("click", () =>{
 
     logo.classList.toggle("animation");
+});
+titre.addEventListener("click", () =>{
+
+    logo2.classList.toggle("animation");
 });
