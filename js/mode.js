@@ -3,7 +3,6 @@ let darkbtn = document.querySelector(".darkmode");
 let darkbtnContent = document.querySelector (".darkmode p");
 
 darkbtn.addEventListener("click", () =>{
-    // link.href = "css/style.css";
    if(localStorage.theme === "style"){
     localStorage.theme = "dark";
     darkbtnContent.textContent = "Thème clair";
