@@ -122,7 +122,7 @@ body .navbar .nav-main .darkmode {
           align-items: center;
   gap: 5px;
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 0;
   cursor: pointer;
 }
@@ -343,7 +343,7 @@ body .navbar .nav-main .burger .barreburger {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: white;
 }
 
 body .navbar .nav-main .close {

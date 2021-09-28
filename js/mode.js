@@ -20,4 +20,4 @@ if(localStorage.theme  != null){
 }else{
     link.href = "css/style.css";
     localStorage.theme = "style";
-}
+};
