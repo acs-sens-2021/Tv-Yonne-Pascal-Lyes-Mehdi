@@ -1,15 +1,18 @@
-let video = document.querySelector(".carroussel-emission");
+let videos = document.querySelectorAll(".image");
 let modal = document.querySelector(".modal-video");
-let navbar = document.querySelector(".modal-title");
+let closemodal = document.querySelector(".close-modal");
 let fond = document.querySelector(".fond");
 
-video.addEventListener("click", () => {
-    modal.style.display = "flex";
-    fond.style.display = "flex";
-    
-})
+for (let video of videos) {
 
-navbar.addEventListener("click", ()=>{
-    modal.style.display = "none";
-    fond.style.display = "none";
-})
+    video.addEventListener("click", () => {
+        modal.style.display = "flex";
+        fond.style.display = "flex";
+    });
+
+    closemodal.addEventListener("click", () => {
+        modal.style.display = "none";
+        fond.style.display = "none";
+
+    });
+}
