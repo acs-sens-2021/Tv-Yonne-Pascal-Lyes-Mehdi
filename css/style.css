@@ -1318,6 +1318,15 @@ ul {
   z-index: 50;
 }
 
+.modal-video .modal-title {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background-color: #8130AC;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .modal-video iframe {
     width: 700px;
@@ -1340,6 +1349,10 @@ ul {
   right: 0;
   font-size: 2rem;
   cursor: pointer;
+}
+
+.modal-video .close-modal p {
+  color: white;
 }
 
 .modal-video img {
