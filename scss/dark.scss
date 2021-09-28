@@ -83,7 +83,7 @@ body {
             }
 
             .darkmode {
-                display: none;
+                display: flex;
                 flex-direction: row;
                 align-items: center;
                 gap: 5px;
@@ -91,7 +91,13 @@ body {
                 right: 0;
                 top: 0;
                 cursor: pointer;
-
+                
+                #dark{
+                    display: none;
+                }
+                #light{
+                    display: flex;
+                }
                 @media screen and (min-width : 768px) {
                     top: 10px;
                 }

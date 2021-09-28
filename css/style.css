@@ -124,6 +124,16 @@ body .navbar .nav-main .darkmode {
   cursor: pointer;
 }
 
+body .navbar .nav-main .darkmode #dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .navbar .nav-main .darkmode #light {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body .navbar .nav-main .darkmode {
     top: 10px;

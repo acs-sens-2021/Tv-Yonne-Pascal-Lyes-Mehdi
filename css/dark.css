@@ -110,7 +110,9 @@ body .navbar .nav-main .lightmode p {
 }
 
 body .navbar .nav-main .darkmode {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -123,6 +125,16 @@ body .navbar .nav-main .darkmode {
   right: 0;
   top: 0;
   cursor: pointer;
+}
+
+body .navbar .nav-main .darkmode #dark {
+  display: none;
+}
+
+body .navbar .nav-main .darkmode #light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
