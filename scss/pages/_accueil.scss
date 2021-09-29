@@ -45,6 +45,10 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+        @media screen and (min-width : 1500px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
 
         .emission {
             margin: 5%;
@@ -104,40 +108,6 @@
         flex-direction: column;
         margin-top: 10px;
         align-items: center;
-
-        // img {
-        //     width: 100%;
-        //     border-radius: 10px;
-
-        //     @media screen and (min-width : 1240px) {
-        //         width: 70%;
-        //     }
-        // }
-        .mapouter {
-            @media screen and (min-width :768px) {
-                width: 750px;
-                height: 400px;
-            }
-            @media screen and (min-width :1240px) {
-                width: 1240px;
-                height: 500px;
-            }
-
-            .gmap_canvas {
-                @media screen and (min-width :1240px) {
-                    width: 1240px;
-                    height: 500px;
-                }
-
-                iframe {
-
-                    @media screen and (min-width :1240px) {
-                        width: 1240px;
-                        height: 500px;
-                    }
-                }
-            }
-        }
 
         h2 {
             width: 100%;
