@@ -252,8 +252,6 @@ body .navbar .nav-main .titre-adhesion .adhesion {
           align-items: center;
   color: white;
   background-color: #8130AC;
-  -webkit-box-shadow: 5px 5px 10px #1d1d1d;
-          box-shadow: 5px 5px 10px #1d1d1d;
   border-radius: 10px;
 }
 
@@ -647,8 +645,6 @@ body .articles-container #emissions .emission h2 {
 body .articles-container #emissions .emission img {
   width: 100%;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 5px dimgray;
-          box-shadow: 5px 5px 5px dimgray;
 }
 
 body .articles-container #emissions .emission h3 {
@@ -659,8 +655,6 @@ body .articles-container #emissions .emission h3 {
 
 body .articles-container .more {
   margin: auto;
-  -webkit-box-shadow: 5px 5px 10px grey;
-          box-shadow: 5px 5px 10px grey;
   background-color: #8130AC;
   border-radius: 10px;
 }

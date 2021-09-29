@@ -3,7 +3,7 @@
 :root {
     scroll-behavior: smooth;
     font-family: $geneva;
-    
+
 }
 
 * {
@@ -91,13 +91,15 @@ body {
                 right: 10px;
                 top: 0;
                 cursor: pointer;
-                
-                #dark{
+
+                #dark {
                     display: none;
                 }
-                #light{
+
+                #light {
                     display: flex;
                 }
+
                 @media screen and (min-width : 768px) {
                     top: 10px;
                 }
@@ -138,7 +140,8 @@ body {
                     margin: 0;
                 }
             }
-            .white-logo{
+
+            .white-logo {
                 display: initial;
             }
 
@@ -182,7 +185,6 @@ body {
                     align-items: center;
                     color: $blanc;
                     background-color: $violet;
-                    box-shadow: 5px 5px 10px rgb(29, 29, 29);
                     border-radius: 10px;
 
                     @media screen and (min-width :768px) {
@@ -455,7 +457,6 @@ body {
                 img {
                     width: 100%;
                     border-radius: 10px;
-                    box-shadow: 5px 5px 5px rgb(105, 105, 105);
                 }
 
                 h3 {
@@ -469,7 +470,6 @@ body {
 
         .more {
             margin: auto;
-            box-shadow: 5px 5px 10px grey;
             background-color: $violet;
             border-radius: 10px;
 
@@ -596,9 +596,11 @@ body {
                     width: 100%;
                 }
             }
-            .dark-logo{
+
+            .dark-logo {
                 display: none;
             }
+
             .white-logo {
                 align-self: center;
                 display: flex;
