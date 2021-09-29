@@ -1,4 +1,4 @@
-@import "variables";
+@import "components/variables";
 
 :root {
     scroll-behavior: smooth;
@@ -182,7 +182,7 @@ body {
                     align-items: center;
                     color: $blanc;
                     background-color: $violet;
-                    box-shadow: 5px 5px 10px grey;
+                    box-shadow: 5px 5px 10px rgb(29, 29, 29);
                     border-radius: 10px;
 
                     @media screen and (min-width :768px) {
