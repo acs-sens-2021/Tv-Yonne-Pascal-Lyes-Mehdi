@@ -21,13 +21,15 @@
 
         &:hover {
 
-            fill: $violet;
+            fill: $fondbody;
         }
     }
 
     .visited {
+
         path {
             fill: $violet;
+
         }
     }
 }
