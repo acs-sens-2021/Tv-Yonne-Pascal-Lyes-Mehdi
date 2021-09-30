@@ -4,7 +4,7 @@ for(let departement of departements){
 
     if(departement.classList.contains("visited")){
         
-        departement.setAttribute("href", "emission.html");
+        departement.setAttribute("href", "ville.html");
         console.log(departement.href);
     };
 };
