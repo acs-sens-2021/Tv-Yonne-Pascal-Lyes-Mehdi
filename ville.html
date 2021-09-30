@@ -14,6 +14,7 @@
     <script src="js/burger.js" defer></script>
     <script src="js/mode.js" defer></script>
     <script src="js/map.js" defer></script>
+    <script src="js/modal-ville.js" defer></script>
 </head>
 
 <body>
@@ -61,50 +62,61 @@
         </div>
     </nav>
     <main class="articles-container">
+        <section class="modal-video">
+            <h1 class="modal-title">Titre de la video</h1>
+            <div class="close-modal">
+                <p>&times;</p>
+            </div>
+            <!-- <img src="img/le-silex.jpg" alt=""> -->
+            <iframe class="iframemob" width="300" height="315" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
         <h2 class="titre-accueil">Découvrer toutes les emissions tournées à Sens</h2>
         <section id="emissions">
             <article class="emission">
                 <h2>Les communes</h2>
-                <a href="">
+                <div class="volley" href="">
                     <img src="img/volley-sens.jpeg" alt="Club de volley-sens">
                     <h3>Conseil du club Sens Volley 89</h3>
-                </a>
+                </div>
             </article>
             <article class="emission">
                 <h2>Les communes</h2>
-                <a href="">
+                <div class="theatre">
                     <img src="img/theatre sens.png" alt="Inauguration restaurant">
                     <h3>ARIANNE ASCARIDE AU THÉÂTRE DE SENS</h3>
-                </a>
+                </div>
             </article>
             <article class="emission">
                 <h2>L'info !</h2>
-                <a href="">
+                <div class="funspace">
                     <img src="img/taillandier.png"
                         alt="Installation module pour la cantine de Theil sur Vanne">
                     <h3>À LA DÉCOUVERTE DE FUN SPACE AVEC ROMI TAILLANDIER</h3>
-                </a>
+                </div>
             </article>
             <article class="emission">
                 <h2>C'était comment avant ?</h2>
-                <a href="">
+                <div class="art">
                     <img src="img/art.png" alt="c'etait comment avant ?">
                     <h3>LA GALERIE D’ART DE SENS AVEC DIDIER PERROCHE</h3>
-                </a>
+                </div>
             </article>
             <article class="emission">
                 <h2>L'info !</h2>
-                <a href="">
+                <div class="vaccin">
                     <img src="img/vaccin.png" alt="Atelier de sculture">
                     <h3>ZOOM SUR LA VACCINATION A SENS</h3>
-                </a>
+                </div>
             </article>
             <article class="emission">
                 <h2>L'info !</h2>
-                <a href="">
+                <div class="simplicicar">
                     <img src="img/simplicicar.jpg" alt="Atelier de sculture">
                     <h3>SIMPLICICAR VOUS ACCOMPAGNE DANS L’ACHAT OU LA VENTE DE VOTRE VEHICULE</h3>
-                </a>
+                </div>
             </article>
         </section>
         <div class="more">
