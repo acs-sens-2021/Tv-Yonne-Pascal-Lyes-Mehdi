@@ -1,0 +1,169 @@
+footer {
+
+    .btnup {
+        font-size: 2rem;
+        position: fixed;
+        bottom: 1%;
+        right: 0;
+
+        svg {
+            color: $btnup !important;
+        }
+    }
+
+    .footer-logo-address {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+        border-top: solid $violet 2px;
+        justify-content: space-between;
+
+        @media screen and (min-width:768px) {
+            justify-content: space-around;
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+        @media screen and (min-width: 1240px) {
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        a {
+            align-self: center;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .white-logo {
+            align-self: center;
+            display: flex;
+
+            img {
+                width: 100%;
+            }
+        }
+        .dark-logo{
+            display: none;
+        }
+        .coordonnees {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-weight: bold;
+                font-size: 1rem;
+
+                @media screen and (min-width:768px) {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .coordonnee {
+                display: flex;
+                flex-direction: row;
+                gap: 5px;
+                align-items: center;
+
+                p {
+                    margin: 0;
+                    font-size: .8rem;
+
+                    @media screen and (min-width:768px) {
+                        font-size: 1rem;
+                    }
+                }
+
+                #loc {
+                    margin-top: 5px;
+                    align-self: baseline;
+                }
+
+                svg {
+                    color: $blanc !important;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 20px;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+
+            button {
+                font-size: .8rem;
+                background-color: $violet;
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+        }
+
+    }
+
+    .reseaux {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: space-between;
+
+        svg {
+            color: $blanc !important;
+        }
+
+        @media screen and (min-width : 768px) {
+            margin: 20px;
+            justify-content: space-around;
+        }
+
+        @media screen and(min-width : 1240px) {
+            gap: 0;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+
+            svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px;
+        font-size: .8rem;
+
+        a {
+            color: $blanc;
+        }
+
+        @media screen and (min-width : 768px) {
+            justify-content: space-around;
+            margin: 20px;
+            font-size: 1rem;
+        }
+    }
+}
