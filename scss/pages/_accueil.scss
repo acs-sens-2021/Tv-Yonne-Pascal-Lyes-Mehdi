@@ -45,6 +45,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
+
         @media screen and (min-width : 1500px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -71,6 +72,7 @@
                 width: 100%;
                 border-radius: 10px;
                 box-shadow: 5px 5px 5px rgb(105, 105, 105);
+                border: solid 1px $fondbody;
             }
 
             h3 {
@@ -88,6 +90,10 @@
         background-color: $violet;
         border-radius: 10px;
 
+        @media screen and (min-width: 768px) {
+            padding: 5px;
+        }
+
         a {
 
             padding: 5px;
@@ -99,6 +105,10 @@
             h3 {
                 margin: 0;
                 font-size: 1rem;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

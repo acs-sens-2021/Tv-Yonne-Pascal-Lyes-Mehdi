@@ -85,6 +85,9 @@
         margin: auto;
         background-color: $violet;
         border-radius: 10px;
+        @media screen and (min-width: 768px) {
+            padding: 5px;
+        }
 
         a {
 
@@ -97,6 +100,9 @@
             h3 {
                 margin: 0;
                 font-size: 1rem;
+                @media screen and (min-width: 768px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }

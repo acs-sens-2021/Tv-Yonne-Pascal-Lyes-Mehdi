@@ -243,6 +243,7 @@
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 5px dimgray;
           box-shadow: 5px 5px 5px dimgray;
+  border: solid 1px #282828;
 }
 
 .articles-container #emissions .emission h3 {
@@ -257,6 +258,12 @@
           box-shadow: 5px 5px 10px grey;
   background-color: #8130AC;
   border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .articles-container .more {
+    padding: 5px;
+  }
 }
 
 .articles-container .more a {
@@ -277,6 +284,12 @@
 .articles-container .more a h3 {
   margin: 0;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .articles-container .more a h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .articles-container .map-container {
@@ -762,7 +775,8 @@
 
 @media screen and (min-width: 768px) {
   .navbar .nav-main .titre-adhesion .adhesion {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 5px;
   }
 }
 
