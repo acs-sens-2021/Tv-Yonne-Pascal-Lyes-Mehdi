@@ -1,5 +1,5 @@
 .navbar {
-    background-color: $blanc;
+    background-color: $fondnav;
     padding: 0;
     border-bottom: solid 2px $violet;
 
@@ -58,12 +58,15 @@
             right: 10px;
             top: 0;
             cursor: pointer;
-            #dark{
-                display: flex;
-            }
-            #light{
+
+            #dark {
                 display: none;
             }
+
+            #light {
+                display: flex;
+            }
+
             @media screen and (min-width : 768px) {
                 top: 10px;
             }
@@ -71,7 +74,7 @@
             p {
                 font-size: .8rem;
                 margin: 0;
-                color: $noir;
+                color: $blanc;
 
                 @media screen and (min-width :1600px) {
                     font-size: 1rem;
@@ -97,11 +100,7 @@
         }
 
         .dark-logo {
-            margin: 0;
-
-            @media screen and (min-width:768px) {
-                margin: 0;
-            }
+            display: none;
         }
 
         .animation {
@@ -109,7 +108,7 @@
         }
 
         .white-logo {
-            display: none;
+            display: flex;
         }
 
         .titre-adhesion {
@@ -125,7 +124,7 @@
                 font-size: 1.3rem;
                 font-style: italic;
                 text-align: center;
-                color: #333333;
+                color: $blanc;
                 font-family: $orbitron;
 
                 @media screen and (min-width:768px) {
@@ -148,11 +147,10 @@
                 align-items: center;
                 color: $blanc;
                 background-color: $violet;
-                box-shadow: 5px 5px 10px grey;
                 border-radius: 10px;
 
                 @media screen and (min-width :768px) {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     padding: 5px;
                 }
 
@@ -160,8 +158,6 @@
                     font-size: 1.2rem;
                 }
 
-                // &:hover{
-                // }
                 @keyframes rotation {
                     0% {
                         transform: rotate(0deg);
@@ -202,7 +198,7 @@
                 display: block;
                 width: 30px;
                 height: 3px;
-                background-color: $noir;
+                background-color: $blanc;
             }
         }
 
@@ -226,6 +222,7 @@
 
     }
 }
+
 .lien {
     display: none;
     flex-direction: column;
@@ -295,7 +292,7 @@
 
             a {
                 letter-spacing: 0px;
-                color: $noir;
+                color: $blanc;
 
                 @media screen and (min-width: 1240px) {
                     color: $blanc;
@@ -322,7 +319,7 @@
         }
 
         a {
-            color: $noir;
+            color: $blanc;
             letter-spacing: 0px;
 
 

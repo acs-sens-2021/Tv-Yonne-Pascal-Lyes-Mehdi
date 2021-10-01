@@ -45,7 +45,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-
         @media screen and (min-width : 1500px) {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
@@ -71,14 +70,12 @@
             img {
                 width: 100%;
                 border-radius: 10px;
-                box-shadow: 5px 5px 5px rgb(105, 105, 105);
-                border: solid 1px $fondbody;
             }
 
             h3 {
                 font-size: .8rem;
                 font-weight: bold;
-                color: $noir;
+                color: $blanc;
             }
 
         }
@@ -86,10 +83,8 @@
 
     .more {
         margin: auto;
-        box-shadow: 5px 5px 10px grey;
         background-color: $violet;
         border-radius: 10px;
-
         @media screen and (min-width: 768px) {
             padding: 5px;
         }
@@ -105,7 +100,6 @@
             h3 {
                 margin: 0;
                 font-size: 1rem;
-
                 @media screen and (min-width: 768px) {
                     font-size: 1.2rem;
                 }
