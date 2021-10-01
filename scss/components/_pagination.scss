@@ -4,26 +4,27 @@
     width: 100%;
     display: flex;
     justify-content: center;
-}
 
-.pagination {
-    align-items: center !important;
-    list-style: none;
-    margin-bottom: 10px;
-    padding: 0;
-    display: flex;
-}
+    .pagination {
+        align-items: center !important;
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 0;
+        display: flex;
 
-.pagination {
+        li {
+             background-color: #8130AC;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin: 0 1px;
 
-    li {
+            a {
 
-        a {
-
-            span {
-                color: white;
-                margin: 5px;
-                text-align: center;
+                span {
+                    color: white;
+                    margin: 5px;
+                    text-align: center;
+                }
             }
         }
     }
