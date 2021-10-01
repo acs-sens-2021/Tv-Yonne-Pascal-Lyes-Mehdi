@@ -5,6 +5,14 @@
     display: flex;
     justify-content: center;
 
+    @media (min-with: 1240px) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .pagination {
         align-items: center !important;
         list-style: none;
@@ -13,7 +21,7 @@
         display: flex;
 
         li {
-             background-color: #8130AC;
+            background-color: #8130AC;
             border-radius: 5px;
             font-size: 1rem;
             margin: 0 1px;
