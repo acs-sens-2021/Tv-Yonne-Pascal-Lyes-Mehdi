@@ -9,7 +9,7 @@ for (let departement of departements) {
     };
 };
 // Je récupère le balise A dans le SVG
-let villes = document.querySelectorAll("svg a");
+let villes = document.querySelectorAll(".visited");
 // Je boucle pour récuperer toutes les villes
 for (let ville of villes) {
     // Je récupère le nom des villes stocké dans la balise A
@@ -20,7 +20,9 @@ for (let ville of villes) {
     // J'injècte le nom des villes dans la balise P
     baliseP.textContent = nomVille;
     // Je récupère le container de la map pour afficher les balises P
-    let map = document.querySelector(".map-yonne");
+    let map = document.querySelector(".ville-container");
     // J'injecte la baliseP dans le conainer
     map.appendChild(baliseP);
+    
+    
 }
