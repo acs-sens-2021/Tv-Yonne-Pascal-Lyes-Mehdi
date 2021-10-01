@@ -1454,6 +1454,21 @@ ul {
           justify-content: center;
 }
 
+@media (min-with: 1240px) {
+  .page {
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .page .pagination {
   -webkit-box-align: center !important;
       -ms-flex-align: center !important;
