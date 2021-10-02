@@ -23,6 +23,18 @@ for (let ville of villes) {
     let map = document.querySelector(".ville-container");
     // J'injecte la baliseP dans le conainer
     map.appendChild(baliseP);
-    
-    
+
+    // Je vais chercher le path des villes visitées
+    let villeColors = document.querySelectorAll(".visited path");
+
+    for (let villeColor of villeColors) {
+
+        baliseP.addEventListener("click", () => {
+
+            if (nomVille = baliseP.innerText) {
+
+                villeColor.style.fill = "blue";
+            }
+        });
+    }
 }
