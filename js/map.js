@@ -25,16 +25,18 @@ for (let ville of villes) {
     map.appendChild(baliseP);
 
     // Je vais chercher le path des villes visitées
+
     let villeColors = document.querySelectorAll(".visited path");
 
-    for (let villeColor of villeColors) {
+    baliseP.addEventListener("click", () => {
 
-        baliseP.addEventListener("click", () => {
+        for (let villeColor of villeColors) {
 
-            if (nomVille = baliseP.innerText) {
-
+            if(villeColor.innerText === baliseP){
+                
                 villeColor.style.fill = "blue";
             }
-        });
-    }
+
+        }
+    });
 }
