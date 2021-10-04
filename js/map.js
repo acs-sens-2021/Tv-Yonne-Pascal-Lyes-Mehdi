@@ -9,12 +9,11 @@ for (let departement of departements) {
     };
 };
 // Je récupère le balise A dans le SVG
-let villes = document.querySelectorAll(".visited");
+let villes = document.querySelectorAll(".visited path");
 // Je boucle pour récuperer toutes les villes
 for (let ville of villes) {
     // Je récupère le nom des villes stocké dans la balise A
-    let nomVille = ville.getAttribute("xlink:title");
-
+    let nomVille = ville.getAttribute("id");
     // Je crée une balise P pour afficher les villes
     let baliseP = document.createElement("p");
     // J'injècte le nom des villes dans la balise P
@@ -24,17 +23,22 @@ for (let ville of villes) {
     // J'injecte la baliseP dans le conainer
     map.appendChild(baliseP);
 
+
     // Je vais chercher le path des villes visitées
-    let villeColors = document.querySelectorAll(".visited path");
+    let villeVisites = document.querySelectorAll(".visited");
 
     baliseP.addEventListener("click", () => {
 
-        for (let villeColor of villeColors) {
+        for (let villeVisite of villeVisites) {
 
-            if (villeColor.textContent === baliseP) {
+            let nomVille = villeVisite.getAttribute("xlink:title");
 
-                villeColor.style.fill = "blue";
-
+            if (nomVille === baliseP.innerText) {
+                console.log(baliseP.innerText);
+                console.log(nomVille);
+                
+                document.querySelector(".visited path").style.fill = "blue";
+                
             }
         }
     });
