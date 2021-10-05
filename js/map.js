@@ -26,13 +26,22 @@ for (let ville of villes) {
 
     let idVille = ville.firstElementChild.id;
     baliseP.dataset.id = idVille;
+
     // Je vais chercher le path des villes visitées
     baliseP.addEventListener("click", () => {
+
+        if (sessionStorage.id != null) {
+
+            let pathTwo = document.querySelector("#" + sessionStorage.id);
+
+            pathTwo.style.fill = "#8130AC";
+        }
 
         let path = document.querySelector("#" + baliseP.dataset.id);
 
         path.style.fill = "red";
 
-        return;
+        sessionStorage.id = path.id;
+
     });
 }
