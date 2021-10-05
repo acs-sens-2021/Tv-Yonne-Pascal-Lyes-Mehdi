@@ -341,7 +341,13 @@
   margin: 5px;
   text-align: center;
   border-right: solid 1px #8130AC;
-  font-size: .8rem;
+  font-size: .7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .articles-container .map-container .map-yonne .ville-container p {
+    font-size: .8rem;
+  }
 }
 
 .articles-container .map-container h2 {
@@ -1126,7 +1132,7 @@ footer .btnup {
 }
 
 footer .btnup svg {
-  color: #A8A8AD !important;
+  color: black !important;
 }
 
 footer .footer-logo-address {

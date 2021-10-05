@@ -138,7 +138,10 @@
                     margin: 5px;
                     text-align: center;
                     border-right: solid 1px $violet;
-                    font-size: .8rem;
+                    font-size: .7rem;
+                    @media screen and (min-width:768px) {
+                        font-size: .8rem;
+                    }
                 }
             }
         }
