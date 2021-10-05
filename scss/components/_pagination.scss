@@ -12,6 +12,10 @@
         display: flex;
         justify-content: center;
     }
+    @media screen and (min-width:1500px) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 
     .pagination {
         align-items: center !important;
