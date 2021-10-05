@@ -25,13 +25,14 @@ for (let ville of villes) {
 
 
     let idVille = ville.firstElementChild.id;
-    let dataVille = baliseP.dataset.id = idVille;
+    baliseP.dataset.id = idVille;
     // Je vais chercher le path des villes visitées
     baliseP.addEventListener("click", () => {
 
-        let path = document.querySelector("path");
+        let path = document.querySelector("#" + baliseP.dataset.id);
 
-        path.style.fill = "blue";
+        path.style.fill = "red";
 
+        return;
     });
 }
