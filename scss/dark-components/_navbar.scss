@@ -108,7 +108,9 @@
         }
 
         .white-logo {
+            width: max-content;
             display: flex;
+            justify-content: center;
         }
 
         .titre-adhesion {
