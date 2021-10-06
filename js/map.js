@@ -39,7 +39,7 @@ for (let ville of villes) {
 
         let path = document.querySelector("#" + baliseP.dataset.id);
 
-        path.style.fill = "red";
+        path.style.fill = "#c6d141";
 
         sessionStorage.id = path.id;
 
