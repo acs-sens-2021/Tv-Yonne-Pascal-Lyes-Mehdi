@@ -306,50 +306,6 @@
           align-items: center;
 }
 
-.articles-container .map-container .map-yonne {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.articles-container .map-container .map-yonne .ville-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-@media screen and (min-width: 768px) {
-  .articles-container .map-container .map-yonne .ville-container {
-    -ms-grid-columns: (1fr)[8];
-        grid-template-columns: repeat(8, 1fr);
-  }
-}
-
-@media screen and (min-width: 1240px) {
-  .articles-container .map-container .map-yonne .ville-container {
-    -ms-grid-columns: (1fr)[10];
-        grid-template-columns: repeat(10, 1fr);
-  }
-}
-
-.articles-container .map-container .map-yonne .ville-container p {
-  margin: 5px;
-  text-align: center;
-  border-right: solid 1px #8130AC;
-  font-size: .7rem;
-}
-
-@media screen and (min-width: 768px) {
-  .articles-container .map-container .map-yonne .ville-container p {
-    font-size: .8rem;
-  }
-}
-
 .articles-container .map-container h2 {
   width: 100%;
   margin: 0;
@@ -1465,6 +1421,16 @@ ul {
 
 .map-yonne {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .map-yonne svg {
@@ -1484,14 +1450,22 @@ ul {
   }
 }
 
-.map-yonne path {
+.map-yonne svg path {
   stroke: white;
   stroke-width: .1px;
   fill: black;
 }
 
-.map-yonne path:hover {
+.map-yonne svg path:hover {
   fill: #282828;
+}
+
+.map-yonne .ville-container {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 10px;
 }
 
 .map-yonne .visited path {

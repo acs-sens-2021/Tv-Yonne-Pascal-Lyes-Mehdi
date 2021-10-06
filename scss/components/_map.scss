@@ -1,6 +1,8 @@
 .map-yonne {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     svg {
         width: 100%;
         height: 400px;
@@ -12,18 +14,23 @@
         @media screen and (min-width:1240px) {
             height: 700px;
         }
-    }
-
-    path {
-        stroke: $blanc;
-        stroke-width: .1px;
-        fill: $noir;
-
-        &:hover {
-
-            fill: $fondbody;
+        
+        path {
+            stroke: $blanc;
+            stroke-width: .1px;
+            fill: $noir;
+    
+            &:hover {
+                fill: $fondbody;
+            }
         }
     }
+    .ville-container {
+        text-align: center;
+        width: max-content;
+        margin: 10px;
+    }
+
 
     .visited {
 

@@ -119,32 +119,8 @@
         margin-top: 10px;
         align-items: center;
 
-        .map-yonne {
-            display: flex;
-            flex-direction: column;
-            
-            .ville-container{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                
-                @media screen and (min-width:768px) {
-                    grid-template-columns: repeat(8, 1fr);
-                }
-                
-                @media screen and (min-width:1240px) {
-                    grid-template-columns: repeat(10, 1fr);
-                }
-                p{
-                    margin: 5px;
-                    text-align: center;
-                    border-right: solid 1px $violet;
-                    font-size: .7rem;
-                    @media screen and (min-width:768px) {
-                        font-size: .8rem;
-                    }
-                }
-            }
-        }
+        
+
 
         h2 {
             width: 100%;

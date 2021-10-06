@@ -15,7 +15,7 @@ for (let ville of villes) {
     // Je récupère le nom des villes stocké dans la balise A
     var nomVille = ville.getAttribute("xlink:title");
     // Je crée une balise P pour afficher les villes
-    let baliseP = document.createElement("p");
+    let baliseP = document.createElement("option");
     // J'injècte le nom des villes dans la balise P
     baliseP.textContent = nomVille;
     // Je récupère le container de la map pour afficher les balises P
@@ -35,6 +35,7 @@ for (let ville of villes) {
             let pathTwo = document.querySelector("#" + sessionStorage.id);
 
             pathTwo.style.fill = "#8130AC";
+
         }
 
         let path = document.querySelector("#" + baliseP.dataset.id);
