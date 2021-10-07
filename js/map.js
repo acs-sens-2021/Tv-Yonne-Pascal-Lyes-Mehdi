@@ -1,4 +1,4 @@
-var liste_villes = {
+let liste_villes = {
     "c89001": ["ACCOLAY", 0, "./pasdevideosici.html"],
     "c89002": ["AIGREMONT", 0, "./pasdevideosici.html"],
     "c89003": ["MONTHOLON", 0, "./pasdevideosici.html"],
@@ -497,29 +497,29 @@ for (let compteur = 0; compteur < Object.keys(liste_villes).length; compteur++) 
         let ville = document.querySelector(`#${Object.keys(liste_villes)[compteur]}`)
 
         ville.style.fill = "#8130ac";
-        
-        var option = document.createElement("option");
-    
+
+        let option = document.createElement("option");
+
         option.textContent = Object.values(liste_villes)[compteur][0];
-    
+
         let select = document.querySelector(".ville-container");
-    
+
         option.addEventListener("click", () => {
-            
+
             if (sessionStorage.id != null) {
-                
+
                 let pathTwo = document.querySelector("#" + sessionStorage.id);
-                
+
                 pathTwo.style.fill = "#8130AC";
-                
+
             }
-            
+
             let path = document.querySelector(`#${Object.keys(liste_villes)[compteur]}`);
-            console.log(path);
+
             path.style.fill = "#c6d141";
-            
+
             sessionStorage.id = path.id;
-            
+
         });
         select.appendChild(option);
     };
