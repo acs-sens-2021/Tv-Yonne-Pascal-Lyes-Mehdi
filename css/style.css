@@ -1468,10 +1468,6 @@ ul {
   margin: 10px;
 }
 
-.map-yonne .visited path {
-  fill: #8130AC;
-}
-
 .page {
   -ms-grid-column: 1;
       grid-column-start: 1;
