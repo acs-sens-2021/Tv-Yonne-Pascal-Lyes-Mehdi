@@ -1452,6 +1452,16 @@ ul {
 
 .map-yonne {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .map-yonne svg {
@@ -1471,18 +1481,22 @@ ul {
   }
 }
 
-.map-yonne path {
+.map-yonne svg path {
   stroke: white;
   stroke-width: .1px;
   fill: black;
 }
 
-.map-yonne path:hover {
+.map-yonne svg path:hover {
   fill: #282828;
 }
 
-.map-yonne .visited path {
-  fill: #8130AC;
+.map-yonne .ville-container {
+  text-align: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 10px;
 }
 
 .page {
