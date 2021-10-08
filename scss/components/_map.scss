@@ -21,7 +21,7 @@
             fill: $noir;
     
             &:hover {
-                fill: $fondbody;
+                fill: $fondbody !important;
             }
         }
     }

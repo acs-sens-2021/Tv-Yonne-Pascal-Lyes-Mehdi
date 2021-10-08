@@ -367,8 +367,20 @@
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .articles-container .partenaires-container .partenaires-img a {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .articles-container .partenaires-container .partenaires-img a {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
 }
 
 .articles-container .partenaires-container .partenaires-img a img {
@@ -449,8 +461,8 @@
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 @media screen and (min-width: 768px) {
@@ -520,8 +532,13 @@
           flex-grow: 0;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  -ms-flex-preferred-size: 15%;
-      flex-basis: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .partenaires-container .partenaires-img a {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
 }
 
 .partenaires-container .partenaires-img a img {
@@ -573,6 +590,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   padding: 10px;
 }
@@ -1453,7 +1473,7 @@ ul {
 }
 
 .map-yonne svg path:hover {
-  fill: #282828;
+  fill: #282828 !important;
 }
 
 .map-yonne .ville-container {
