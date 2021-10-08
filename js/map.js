@@ -498,29 +498,32 @@ for (let compteur = 0; compteur < Object.keys(liste_villes).length; compteur++) 
 
         ville.style.fill = "#8130ac";
 
-        let option = document.createElement("option");
+        var option = document.createElement("option");
 
         option.textContent = Object.values(liste_villes)[compteur][0];
 
-        let select = document.querySelector(".ville-container");
+        option.value = Object.keys(liste_villes)[compteur];
 
-        option.addEventListener("click", () => {
-
-            if (sessionStorage.id != null) {
-
-                let pathTwo = document.querySelector("#" + sessionStorage.id);
-
-                pathTwo.style.fill = "#8130AC";
-
-            }
-
-            let path = document.querySelector(`#${Object.keys(liste_villes)[compteur]}`);
-
-            path.style.fill = "#c6d141";
-
-            sessionStorage.id = path.id;
-
-        });
+        var select = document.querySelector(".ville-container");
+        
         select.appendChild(option);
     };
 }
+select.addEventListener("change", () => {
+    
+    if (sessionStorage.id != null) {
+        
+        let pathTwo = document.querySelector("#" + sessionStorage.id);
+        
+        pathTwo.style.fill = "#8130AC";
+        
+    }
+    
+    let path = document.querySelector("#" + select.value);
+    
+    console.log(select);
+    path.style.fill = "#c6d141";
+    
+    sessionStorage.id = path.id;
+    
+});
