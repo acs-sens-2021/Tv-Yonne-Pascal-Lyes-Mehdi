@@ -98,6 +98,9 @@
                 
             }
 
+            @media screen and (min-width:768px) {
+                flex-basis: 15%; 
+            }
             img {
                 width: 100%;
             }
